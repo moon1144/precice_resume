@@ -1,0 +1,1091 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2012                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 79e353b8-20201222 OPENFOAM=2012
+Arch   : "LSB;label=32;scalar=64"
+Exec   : pimpleFoam -case Fluid
+Date   : Feb 26 2021
+Time   : 14:18:35
+Host   : moon-msi
+PID    : 377621
+I/O    : uncollated
+Case   : /home/moon/PreCICE/tutorials/FSI/flap_perp/OpenFOAM-CalculiX/tut/sim3/Fluid
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0.2
+
+Selecting dynamicFvMesh dynamicMotionSolverFvMesh
+Selecting motion solver: displacementLaplacian
+Applying solid body motion to entire mesh
+Selecting motion diffusion: quadratic
+Selecting motion diffusion: inverseDistance
+Selecting patchDistMethod meshWave
+
+PIMPLE: Operating solver in PISO mode
+
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type laminar
+Selecting laminar stress model Stokes
+No MRF models present
+
+No finite volume options present
+Constructing face velocity Uf
+
+Courant Number mean: 1.26568 max: 6.23856
+
+Starting time loop
+
+---[preciceAdapter] The preciceAdapter was loaded.
+---[preciceAdapter] Reading preciceDict...
+---[preciceAdapter] [DEBUG]   precice-config-file : precice-config.xml
+---[preciceAdapter] [DEBUG]   participant name    : Fluid
+---[preciceAdapter] [DEBUG]   modules requested   : 
+---[preciceAdapter] [DEBUG]   - FSI
+
+---[preciceAdapter] [DEBUG]   interfaces : 
+---[preciceAdapter] [DEBUG]   - mesh         : Fluid-Mesh-Faces
+---[preciceAdapter] [DEBUG]     locations    : faceCenters
+---[preciceAdapter] [DEBUG]     connectivity : 0
+---[preciceAdapter] [DEBUG]     patches      : 
+---[preciceAdapter] [DEBUG]       - flap
+---[preciceAdapter] [DEBUG]     writeData    : 
+---[preciceAdapter] [DEBUG]       - Forces0
+---[preciceAdapter] [DEBUG]     readData     : 
+---[preciceAdapter] [DEBUG]   - mesh         : Fluid-Mesh-Nodes
+---[preciceAdapter] [DEBUG]     locations    : faceNodes
+---[preciceAdapter] [DEBUG]     connectivity : 0
+---[preciceAdapter] [DEBUG]     patches      : 
+---[preciceAdapter] [DEBUG]       - flap
+---[preciceAdapter] [DEBUG]     writeData    : 
+---[preciceAdapter] [DEBUG]     readData     : 
+---[preciceAdapter] [DEBUG]       - Displacements0
+---[preciceAdapter] [DEBUG] Configuring the FSI module...
+---[preciceAdapter] [DEBUG]     user-defined solver type : 
+---[preciceAdapter] [DEBUG]     pointDisplacement field name : pointDisplacement
+---[preciceAdapter] [DEBUG] Unknown solver type. Determining the solver type...
+---[preciceAdapter] [DEBUG] Automatically determined solver type : incompressible
+---[preciceAdapter] [DEBUG] Checking the timestep type (fixed vs adjustable)...
+---[preciceAdapter] [DEBUG]   Timestep type: fixed.
+---[preciceAdapter] [DEBUG] Creating the preCICE solver interface...
+---[preciceAdapter] [DEBUG]   Number of processes: 1
+---[preciceAdapter] [DEBUG]   MPI rank: 0
+---[precice] [0m This is preCICE version 2.2.0
+---[precice] [0m Revision info: v2.2.0
+---[precice] [0m Configuration: Release (Debug and Trace log unavailable)
+---[precice] [0m Configuring preCICE with configuration "precice-config.xml"
+---[precice] [0m I am participant "Fluid"
+---[preciceAdapter] [DEBUG]   preCICE solver interface was created.
+---[preciceAdapter] [DEBUG] Creating interfaces...
+---[preciceAdapter] [DEBUG] Number of face centres: 33
+---[preciceAdapter] [DEBUG] Interface created on mesh Fluid-Mesh-Faces
+---[preciceAdapter] [DEBUG] Adding coupling data writers...
+---[preciceAdapter] [DEBUG] Added writer: Force.
+---[preciceAdapter] [DEBUG] Adding coupling data readers...
+---[preciceAdapter] [DEBUG] Number of face nodes: 68
+---[preciceAdapter] [DEBUG] Interface created on mesh Fluid-Mesh-Nodes
+---[preciceAdapter] [DEBUG] Adding coupling data writers...
+---[preciceAdapter] [DEBUG] Adding coupling data readers...
+---[preciceAdapter] [DEBUG] Added reader: Displacement.
+---[preciceAdapter] [DEBUG] Initalizing the preCICE solver interface...
+---[precice] [0m Setting up master communication to coupling partner/s
+---[precice] [0m Masters are connected
+---[precice] [0m Setting up preliminary slaves communication to coupling partner/s
+---[precice] [0m Prepare partition for mesh Fluid-Mesh-Faces
+---[precice] [0m Prepare partition for mesh Fluid-Mesh-Nodes
+---[precice] [0m Receive global mesh Solid
+---[precice] [0m Setting up slaves communication to coupling partner/s
+---[precice] [0m Slaves are connected
+---[precice] [0m iteration: 1, time-window: 1 of 30, time: 0, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: no, 
+---[preciceAdapter] [DEBUG] Initializing preCICE data...
+---[precice] [0m Compute write mapping from mesh "Fluid-Mesh-Faces" to mesh "Solid".
+---[precice] [0m initializeData is skipped since no data has to be initialized.
+---[preciceAdapter] preCICE was configured and initialized
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+---[preciceAdapter] Setting the solver's endTime to infinity to prevent early exits. Only preCICE will control the simulation's endTime. Any functionObject's end() method will be triggered by the adapter. You may disable this behavior in the adapter's configuration.
+Courant Number mean: 1.26568 max: 6.23856
+Time = 0.21
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 1.15121e-06, Final residual = 1.25839e-17, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 7.98703e-07, Final residual = 3.4034e-18, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.000929728, No Iterations 69
+DICPCG:  Solving for pcorr, Initial residual = 0.00274384, Final residual = 9.19163e-09, No Iterations 80
+time step continuity errors : sum local = 1.41807e-11, global = 1.31155e-13, cumulative = 4.70272e-10
+smoothSolver:  Solving for Ux, Initial residual = 0.0901555, Final residual = 5.94925e-07, No Iterations 6
+smoothSolver:  Solving for Uz, Initial residual = 0.110676, Final residual = 2.69625e-07, No Iterations 7
+DICPCG:  Solving for p, Initial residual = 0.224786, Final residual = 0.000219047, No Iterations 64
+DICPCG:  Solving for p, Initial residual = 0.00149071, Final residual = 1.31594e-06, No Iterations 62
+time step continuity errors : sum local = 5.15909e-08, global = 2.29669e-09, cumulative = 2.76696e-09
+DICPCG:  Solving for p, Initial residual = 0.0372949, Final residual = 3.41879e-05, No Iterations 57
+DICPCG:  Solving for p, Initial residual = 0.000212491, Final residual = 2.00359e-07, No Iterations 61
+time step continuity errors : sum local = 8.08383e-09, global = 2.43824e-10, cumulative = 3.01078e-09
+DICPCG:  Solving for p, Initial residual = 0.0256101, Final residual = 2.02284e-05, No Iterations 63
+DICPCG:  Solving for p, Initial residual = 0.000154667, Final residual = 1.34053e-07, No Iterations 63
+time step continuity errors : sum local = 5.52498e-09, global = 7.23807e-11, cumulative = 3.08316e-09
+DICPCG:  Solving for p, Initial residual = 0.0175142, Final residual = 1.64781e-05, No Iterations 62
+DICPCG:  Solving for p, Initial residual = 0.000113171, Final residual = 9.66952e-09, No Iterations 71
+time step continuity errors : sum local = 4.04938e-10, global = 8.09175e-12, cumulative = 3.09126e-09
+ExecutionTime = 0.17 s  ClockTime = 2 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m Compute read mapping from mesh "Solid" to mesh "Fluid-Mesh-Nodes".
+---[precice] [0m iteration: 1, time-window: 2 of 30, time: 0.01, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.1859 max: 7.916
+Time = 0.22
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.104158, Final residual = 5.22191e-18, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.127952, Final residual = 6.77111e-18, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.000942811, No Iterations 68
+DICPCG:  Solving for pcorr, Initial residual = 0.00355029, Final residual = 7.34078e-09, No Iterations 81
+time step continuity errors : sum local = 2.35542e-11, global = -1.15001e-13, cumulative = 3.09114e-09
+smoothSolver:  Solving for Ux, Initial residual = 0.0811753, Final residual = 2.38491e-07, No Iterations 6
+smoothSolver:  Solving for Uz, Initial residual = 0.0586958, Final residual = 6.40196e-07, No Iterations 6
+DICPCG:  Solving for p, Initial residual = 0.166881, Final residual = 0.000139075, No Iterations 65
+DICPCG:  Solving for p, Initial residual = 0.00133279, Final residual = 1.29549e-06, No Iterations 60
+time step continuity errors : sum local = 6.46164e-08, global = -6.7746e-10, cumulative = 2.41368e-09
+DICPCG:  Solving for p, Initial residual = 0.0363374, Final residual = 3.1514e-05, No Iterations 57
+DICPCG:  Solving for p, Initial residual = 0.000331066, Final residual = 3.01966e-07, No Iterations 58
+time step continuity errors : sum local = 1.45892e-08, global = -1.11714e-10, cumulative = 2.30197e-09
+DICPCG:  Solving for p, Initial residual = 0.0266771, Final residual = 2.64437e-05, No Iterations 58
+DICPCG:  Solving for p, Initial residual = 0.000249248, Final residual = 2.26193e-07, No Iterations 33
+time step continuity errors : sum local = 1.08684e-08, global = -1.64738e-09, cumulative = 6.54584e-10
+DICPCG:  Solving for p, Initial residual = 0.0183039, Final residual = 1.53184e-05, No Iterations 60
+DICPCG:  Solving for p, Initial residual = 0.000178947, Final residual = 7.04536e-09, No Iterations 71
+time step continuity errors : sum local = 3.397e-10, global = -1.19116e-13, cumulative = 6.54465e-10
+ExecutionTime = 0.2 s  ClockTime = 2 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 3 of 30, time: 0.02, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.18565 max: 7.5717
+Time = 0.23
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.0477644, Final residual = 6.58455e-28, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.0664101, Final residual = 4.10661e-18, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.000816205, No Iterations 69
+DICPCG:  Solving for pcorr, Initial residual = 0.00390465, Final residual = 9.77153e-09, No Iterations 81
+time step continuity errors : sum local = 1.39063e-11, global = -1.9236e-13, cumulative = 6.54273e-10
+smoothSolver:  Solving for Ux, Initial residual = 0.0626287, Final residual = 3.01251e-07, No Iterations 6
+smoothSolver:  Solving for Uz, Initial residual = 0.0667649, Final residual = 2.88194e-07, No Iterations 6
+DICPCG:  Solving for p, Initial residual = 0.0476043, Final residual = 3.41224e-05, No Iterations 66
+DICPCG:  Solving for p, Initial residual = 0.000656639, Final residual = 6.30544e-07, No Iterations 61
+time step continuity errors : sum local = 2.4799e-08, global = 6.10848e-10, cumulative = 1.26512e-09
+DICPCG:  Solving for p, Initial residual = 0.0184188, Final residual = 1.66139e-05, No Iterations 61
+DICPCG:  Solving for p, Initial residual = 0.000142163, Final residual = 1.37796e-07, No Iterations 53
+time step continuity errors : sum local = 5.46829e-09, global = -1.70354e-11, cumulative = 1.24809e-09
+DICPCG:  Solving for p, Initial residual = 0.013262, Final residual = 1.12136e-05, No Iterations 61
+DICPCG:  Solving for p, Initial residual = 0.000105944, Final residual = 9.81682e-08, No Iterations 56
+time step continuity errors : sum local = 3.92332e-09, global = -5.93822e-11, cumulative = 1.1887e-09
+DICPCG:  Solving for p, Initial residual = 0.00938589, Final residual = 7.55361e-06, No Iterations 61
+DICPCG:  Solving for p, Initial residual = 7.60294e-05, Final residual = 9.63855e-09, No Iterations 64
+time step continuity errors : sum local = 3.87279e-10, global = -1.07913e-11, cumulative = 1.17791e-09
+ExecutionTime = 0.24 s  ClockTime = 2 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 4 of 30, time: 0.03, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.19271 max: 7.40638
+Time = 0.24
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.0456795, Final residual = 2.12196e-18, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.061755, Final residual = 5.23303e-28, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.000764096, No Iterations 67
+DICPCG:  Solving for pcorr, Initial residual = 0.00406558, Final residual = 8.16436e-09, No Iterations 82
+time step continuity errors : sum local = 1.36255e-12, global = 3.93391e-14, cumulative = 1.17795e-09
+smoothSolver:  Solving for Ux, Initial residual = 0.0519558, Final residual = 2.70747e-07, No Iterations 6
+smoothSolver:  Solving for Uz, Initial residual = 0.0556336, Final residual = 2.13724e-07, No Iterations 6
+DICPCG:  Solving for p, Initial residual = 0.043335, Final residual = 3.71973e-05, No Iterations 65
+DICPCG:  Solving for p, Initial residual = 0.000619584, Final residual = 5.64198e-07, No Iterations 61
+time step continuity errors : sum local = 1.92198e-08, global = -2.51408e-10, cumulative = 9.26544e-10
+DICPCG:  Solving for p, Initial residual = 0.016097, Final residual = 1.31314e-05, No Iterations 54
+DICPCG:  Solving for p, Initial residual = 0.000158403, Final residual = 1.40307e-07, No Iterations 61
+time step continuity errors : sum local = 4.81172e-09, global = 2.96623e-11, cumulative = 9.56206e-10
+DICPCG:  Solving for p, Initial residual = 0.0102679, Final residual = 7.38168e-06, No Iterations 54
+DICPCG:  Solving for p, Initial residual = 0.000107804, Final residual = 1.07172e-07, No Iterations 55
+time step continuity errors : sum local = 3.68944e-09, global = -2.96765e-11, cumulative = 9.26529e-10
+DICPCG:  Solving for p, Initial residual = 0.00659645, Final residual = 5.5092e-06, No Iterations 33
+DICPCG:  Solving for p, Initial residual = 7.41139e-05, Final residual = 9.42731e-09, No Iterations 65
+time step continuity errors : sum local = 3.25175e-10, global = 5.11679e-12, cumulative = 9.31646e-10
+ExecutionTime = 0.27 s  ClockTime = 2 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 5 of 30, time: 0.04, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.20041 max: 7.11436
+Time = 0.25
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.0440825, Final residual = 1.96985e-18, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.0560909, Final residual = 1.46609e-18, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.00077493, No Iterations 67
+DICPCG:  Solving for pcorr, Initial residual = 0.0113564, Final residual = 9.24445e-09, No Iterations 84
+time step continuity errors : sum local = 5.96475e-13, global = 3.44917e-15, cumulative = 9.3165e-10
+smoothSolver:  Solving for Ux, Initial residual = 0.0413711, Final residual = 2.19602e-07, No Iterations 6
+smoothSolver:  Solving for Uz, Initial residual = 0.0479417, Final residual = 2.17123e-07, No Iterations 6
+DICPCG:  Solving for p, Initial residual = 0.0444286, Final residual = 4.15256e-05, No Iterations 61
+DICPCG:  Solving for p, Initial residual = 0.000790067, Final residual = 7.56215e-07, No Iterations 61
+time step continuity errors : sum local = 2.44208e-08, global = -1.08452e-09, cumulative = -1.52869e-10
+DICPCG:  Solving for p, Initial residual = 0.0145669, Final residual = 1.34621e-05, No Iterations 60
+DICPCG:  Solving for p, Initial residual = 0.000211342, Final residual = 1.82342e-07, No Iterations 58
+time step continuity errors : sum local = 5.93188e-09, global = 9.16076e-11, cumulative = -6.12617e-11
+DICPCG:  Solving for p, Initial residual = 0.00980442, Final residual = 7.15039e-06, No Iterations 61
+DICPCG:  Solving for p, Initial residual = 0.000151499, Final residual = 1.44534e-07, No Iterations 59
+time step continuity errors : sum local = 4.7101e-09, global = 1.33604e-10, cumulative = 7.23422e-11
+DICPCG:  Solving for p, Initial residual = 0.00683968, Final residual = 4.85666e-06, No Iterations 61
+DICPCG:  Solving for p, Initial residual = 0.000109397, Final residual = 9.22146e-09, No Iterations 68
+time step continuity errors : sum local = 3.0064e-10, global = -5.78174e-12, cumulative = 6.65605e-11
+ExecutionTime = 0.31 s  ClockTime = 2 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 6 of 30, time: 0.05, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.20927 max: 6.94567
+Time = 0.26
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.042615, Final residual = 6.65955e-28, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.0524857, Final residual = 1.50931e-18, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.000782208, No Iterations 67
+DICPCG:  Solving for pcorr, Initial residual = 0.00458948, Final residual = 7.26586e-09, No Iterations 83
+time step continuity errors : sum local = 1.38828e-12, global = 3.0388e-14, cumulative = 6.65909e-11
+smoothSolver:  Solving for Ux, Initial residual = 0.0362759, Final residual = 1.9984e-07, No Iterations 6
+smoothSolver:  Solving for Uz, Initial residual = 0.0442842, Final residual = 2.25389e-07, No Iterations 6
+DICPCG:  Solving for p, Initial residual = 0.043938, Final residual = 3.4298e-05, No Iterations 61
+DICPCG:  Solving for p, Initial residual = 0.000836034, Final residual = 7.43202e-07, No Iterations 62
+time step continuity errors : sum local = 2.32528e-08, global = -1.45527e-09, cumulative = -1.38868e-09
+DICPCG:  Solving for p, Initial residual = 0.0123559, Final residual = 1.02844e-05, No Iterations 60
+DICPCG:  Solving for p, Initial residual = 0.000212586, Final residual = 1.84934e-07, No Iterations 59
+time step continuity errors : sum local = 5.81493e-09, global = -7.45965e-11, cumulative = -1.46328e-09
+DICPCG:  Solving for p, Initial residual = 0.0088707, Final residual = 6.89426e-06, No Iterations 61
+DICPCG:  Solving for p, Initial residual = 0.000158661, Final residual = 1.41738e-07, No Iterations 58
+time step continuity errors : sum local = 4.45799e-09, global = 2.56755e-10, cumulative = -1.20652e-09
+DICPCG:  Solving for p, Initial residual = 0.00639953, Final residual = 5.25408e-06, No Iterations 61
+DICPCG:  Solving for p, Initial residual = 0.000116301, Final residual = 8.78714e-09, No Iterations 69
+time step continuity errors : sum local = 2.76235e-10, global = -4.39738e-12, cumulative = -1.21092e-09
+ExecutionTime = 0.35 s  ClockTime = 2 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 7 of 30, time: 0.06, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.21931 max: 6.76334
+Time = 0.27
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.0410902, Final residual = 6.68767e-28, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.0509888, Final residual = 9.40899e-19, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.000737186, No Iterations 67
+DICPCG:  Solving for pcorr, Initial residual = 0.00440477, Final residual = 6.58785e-09, No Iterations 83
+time step continuity errors : sum local = 1.51585e-12, global = 3.1974e-14, cumulative = -1.21089e-09
+smoothSolver:  Solving for Ux, Initial residual = 0.0328241, Final residual = 1.90085e-07, No Iterations 6
+smoothSolver:  Solving for Uz, Initial residual = 0.0411443, Final residual = 2.27546e-07, No Iterations 6
+DICPCG:  Solving for p, Initial residual = 0.0424478, Final residual = 2.69131e-05, No Iterations 61
+DICPCG:  Solving for p, Initial residual = 0.000807254, Final residual = 7.13949e-07, No Iterations 44
+time step continuity errors : sum local = 2.17627e-08, global = -3.79828e-09, cumulative = -5.00916e-09
+DICPCG:  Solving for p, Initial residual = 0.0123577, Final residual = 1.10056e-05, No Iterations 59
+DICPCG:  Solving for p, Initial residual = 0.000195723, Final residual = 1.78284e-07, No Iterations 61
+time step continuity errors : sum local = 5.44143e-09, global = -2.6574e-10, cumulative = -5.2749e-09
+DICPCG:  Solving for p, Initial residual = 0.00916618, Final residual = 8.08716e-06, No Iterations 60
+DICPCG:  Solving for p, Initial residual = 0.000147627, Final residual = 1.11406e-07, No Iterations 59
+time step continuity errors : sum local = 3.39342e-09, global = -2.45629e-11, cumulative = -5.29947e-09
+DICPCG:  Solving for p, Initial residual = 0.00652702, Final residual = 6.24365e-06, No Iterations 60
+DICPCG:  Solving for p, Initial residual = 0.000109108, Final residual = 8.48584e-09, No Iterations 69
+time step continuity errors : sum local = 2.58033e-10, global = -6.507e-12, cumulative = -5.30597e-09
+ExecutionTime = 0.39 s  ClockTime = 2 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 8 of 30, time: 0.07, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.23016 max: 6.56004
+Time = 0.28
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.0396906, Final residual = 1.12113e-17, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.0506064, Final residual = 2.35161e-18, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.000710519, No Iterations 67
+DICPCG:  Solving for pcorr, Initial residual = 0.00831728, Final residual = 9.14766e-09, No Iterations 83
+time step continuity errors : sum local = 1.27312e-12, global = 7.71175e-15, cumulative = -5.30597e-09
+smoothSolver:  Solving for Ux, Initial residual = 0.0301092, Final residual = 1.82125e-07, No Iterations 6
+smoothSolver:  Solving for Uz, Initial residual = 0.0382525, Final residual = 2.26889e-07, No Iterations 6
+DICPCG:  Solving for p, Initial residual = 0.0412188, Final residual = 3.89402e-05, No Iterations 61
+DICPCG:  Solving for p, Initial residual = 0.00077612, Final residual = 6.90428e-07, No Iterations 59
+time step continuity errors : sum local = 2.03921e-08, global = 3.53462e-10, cumulative = -4.9525e-09
+DICPCG:  Solving for p, Initial residual = 0.0123209, Final residual = 1.21339e-05, No Iterations 57
+DICPCG:  Solving for p, Initial residual = 0.000178756, Final residual = 1.5279e-07, No Iterations 61
+time step continuity errors : sum local = 4.50438e-09, global = -2.81705e-10, cumulative = -5.23421e-09
+DICPCG:  Solving for p, Initial residual = 0.00908258, Final residual = 8.80567e-06, No Iterations 59
+DICPCG:  Solving for p, Initial residual = 0.00013652, Final residual = 1.28232e-07, No Iterations 60
+time step continuity errors : sum local = 3.76676e-09, global = -1.62796e-10, cumulative = -5.39701e-09
+DICPCG:  Solving for p, Initial residual = 0.00650311, Final residual = 5.57365e-06, No Iterations 60
+DICPCG:  Solving for p, Initial residual = 9.97824e-05, Final residual = 8.81436e-09, No Iterations 69
+time step continuity errors : sum local = 2.58176e-10, global = -3.63144e-12, cumulative = -5.40064e-09
+ExecutionTime = 0.42 s  ClockTime = 2 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 9 of 30, time: 0.08, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.24125 max: 6.45223
+Time = 0.29
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.0383093, Final residual = 6.74116e-28, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.0510573, Final residual = 3.31043e-18, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.000751763, No Iterations 67
+DICPCG:  Solving for pcorr, Initial residual = 0.00467765, Final residual = 9.01129e-09, No Iterations 82
+time step continuity errors : sum local = 2.5991e-12, global = 4.10152e-14, cumulative = -5.4006e-09
+smoothSolver:  Solving for Ux, Initial residual = 0.027747, Final residual = 1.73755e-07, No Iterations 6
+smoothSolver:  Solving for Uz, Initial residual = 0.0356077, Final residual = 2.27498e-07, No Iterations 6
+DICPCG:  Solving for p, Initial residual = 0.0406429, Final residual = 3.871e-05, No Iterations 62
+DICPCG:  Solving for p, Initial residual = 0.000753985, Final residual = 6.92699e-07, No Iterations 62
+time step continuity errors : sum local = 1.95193e-08, global = -8.6897e-10, cumulative = -6.26957e-09
+DICPCG:  Solving for p, Initial residual = 0.0118381, Final residual = 9.49758e-06, No Iterations 57
+DICPCG:  Solving for p, Initial residual = 0.000168322, Final residual = 1.39424e-07, No Iterations 61
+time step continuity errors : sum local = 3.91598e-09, global = -1.05087e-10, cumulative = -6.37465e-09
+DICPCG:  Solving for p, Initial residual = 0.00876221, Final residual = 8.57807e-06, No Iterations 58
+DICPCG:  Solving for p, Initial residual = 0.000131226, Final residual = 1.18494e-07, No Iterations 53
+time step continuity errors : sum local = 3.31452e-09, global = -2.45478e-10, cumulative = -6.62013e-09
+DICPCG:  Solving for p, Initial residual = 0.00627334, Final residual = 5.69697e-06, No Iterations 59
+DICPCG:  Solving for p, Initial residual = 9.59862e-05, Final residual = 9.52012e-09, No Iterations 65
+time step continuity errors : sum local = 2.65428e-10, global = -2.57647e-11, cumulative = -6.6459e-09
+ExecutionTime = 0.46 s  ClockTime = 2 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 10 of 30, time: 0.09, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.2521 max: 6.33032
+Time = 0.3
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.037023, Final residual = 2.8224e-18, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.0520778, Final residual = 4.65115e-18, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.000765741, No Iterations 67
+DICPCG:  Solving for pcorr, Initial residual = 0.00586534, Final residual = 9.91185e-09, No Iterations 82
+time step continuity errors : sum local = 2.50586e-12, global = 2.61685e-14, cumulative = -6.64587e-09
+smoothSolver:  Solving for Ux, Initial residual = 0.0256212, Final residual = 1.64912e-07, No Iterations 6
+smoothSolver:  Solving for Uz, Initial residual = 0.0331581, Final residual = 2.25252e-07, No Iterations 6
+DICPCG:  Solving for p, Initial residual = 0.0401477, Final residual = 3.21083e-05, No Iterations 63
+DICPCG:  Solving for p, Initial residual = 0.000732891, Final residual = 6.26854e-07, No Iterations 63
+time step continuity errors : sum local = 1.69128e-08, global = -5.86043e-10, cumulative = -7.23191e-09
+DICPCG:  Solving for p, Initial residual = 0.0113047, Final residual = 9.77644e-06, No Iterations 53
+DICPCG:  Solving for p, Initial residual = 0.000161142, Final residual = 1.61109e-07, No Iterations 59
+time step continuity errors : sum local = 4.33236e-09, global = 5.71609e-11, cumulative = -7.17475e-09
+DICPCG:  Solving for p, Initial residual = 0.00818326, Final residual = 7.32824e-06, No Iterations 57
+DICPCG:  Solving for p, Initial residual = 0.000125357, Final residual = 1.22468e-07, No Iterations 39
+time step continuity errors : sum local = 3.27969e-09, global = -3.76145e-10, cumulative = -7.5509e-09
+DICPCG:  Solving for p, Initial residual = 0.00583386, Final residual = 4.34309e-06, No Iterations 37
+DICPCG:  Solving for p, Initial residual = 9.10172e-05, Final residual = 9.09048e-09, No Iterations 68
+time step continuity errors : sum local = 2.42651e-10, global = -4.27523e-12, cumulative = -7.55517e-09
+ExecutionTime = 0.52 s  ClockTime = 2 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 11 of 30, time: 0.1, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.26267 max: 6.2064
+Time = 0.31
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.0358111, Final residual = 6.79831e-28, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.0514022, Final residual = 3.81351e-18, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.000758871, No Iterations 67
+DICPCG:  Solving for pcorr, Initial residual = 0.00701725, Final residual = 6.96843e-09, No Iterations 83
+time step continuity errors : sum local = 1.61716e-12, global = 1.6531e-14, cumulative = -7.55515e-09
+smoothSolver:  Solving for Ux, Initial residual = 0.0238202, Final residual = 9.88085e-07, No Iterations 5
+smoothSolver:  Solving for Uz, Initial residual = 0.0309585, Final residual = 2.24348e-07, No Iterations 6
+DICPCG:  Solving for p, Initial residual = 0.0394811, Final residual = 3.76087e-05, No Iterations 64
+DICPCG:  Solving for p, Initial residual = 0.000719983, Final residual = 5.82824e-07, No Iterations 63
+time step continuity errors : sum local = 1.50507e-08, global = -3.5874e-10, cumulative = -7.91389e-09
+DICPCG:  Solving for p, Initial residual = 0.0106472, Final residual = 7.77526e-06, No Iterations 52
+DICPCG:  Solving for p, Initial residual = 0.0001571, Final residual = 1.27075e-07, No Iterations 60
+time step continuity errors : sum local = 3.27011e-09, global = -2.86837e-11, cumulative = -7.94258e-09
+DICPCG:  Solving for p, Initial residual = 0.00754385, Final residual = 7.17169e-06, No Iterations 56
+DICPCG:  Solving for p, Initial residual = 0.000121615, Final residual = 1.10078e-07, No Iterations 55
+time step continuity errors : sum local = 2.82151e-09, global = 8.23615e-11, cumulative = -7.86022e-09
+DICPCG:  Solving for p, Initial residual = 0.00534853, Final residual = 5.04718e-06, No Iterations 57
+DICPCG:  Solving for p, Initial residual = 8.84803e-05, Final residual = 8.45207e-09, No Iterations 68
+time step continuity errors : sum local = 2.15961e-10, global = -5.50519e-12, cumulative = -7.86572e-09
+ExecutionTime = 0.56 s  ClockTime = 2 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 12 of 30, time: 0.11, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.27274 max: 6.08981
+Time = 0.32
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.0346559, Final residual = 6.2784e-19, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.0484643, Final residual = 1.957e-18, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.000792351, No Iterations 67
+DICPCG:  Solving for pcorr, Initial residual = 0.005125, Final residual = 8.84809e-09, No Iterations 82
+time step continuity errors : sum local = 3.12958e-12, global = 3.54114e-14, cumulative = -7.86569e-09
+smoothSolver:  Solving for Ux, Initial residual = 0.0221983, Final residual = 9.30579e-07, No Iterations 5
+smoothSolver:  Solving for Uz, Initial residual = 0.0290061, Final residual = 2.18941e-07, No Iterations 6
+DICPCG:  Solving for p, Initial residual = 0.0387805, Final residual = 2.9269e-05, No Iterations 65
+DICPCG:  Solving for p, Initial residual = 0.000696763, Final residual = 6.7509e-07, No Iterations 62
+time step continuity errors : sum local = 1.66015e-08, global = -2.85485e-10, cumulative = -8.15117e-09
+DICPCG:  Solving for p, Initial residual = 0.00996337, Final residual = 9.77064e-06, No Iterations 50
+DICPCG:  Solving for p, Initial residual = 0.000150619, Final residual = 1.30468e-07, No Iterations 60
+time step continuity errors : sum local = 3.1978e-09, global = -4.63759e-11, cumulative = -8.19755e-09
+DICPCG:  Solving for p, Initial residual = 0.00694964, Final residual = 6.74293e-06, No Iterations 30
+DICPCG:  Solving for p, Initial residual = 0.000113361, Final residual = 1.11482e-07, No Iterations 48
+time step continuity errors : sum local = 2.72256e-09, global = 1.30146e-10, cumulative = -8.0674e-09
+DICPCG:  Solving for p, Initial residual = 0.00485908, Final residual = 4.40912e-06, No Iterations 57
+DICPCG:  Solving for p, Initial residual = 8.23236e-05, Final residual = 9.97282e-09, No Iterations 67
+time step continuity errors : sum local = 2.42819e-10, global = -7.53127e-12, cumulative = -8.07493e-09
+ExecutionTime = 0.59 s  ClockTime = 2 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 13 of 30, time: 0.12, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.28233 max: 5.98505
+Time = 0.33
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.0335818, Final residual = 5.94306e-19, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.0444952, Final residual = 4.7755e-18, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.000803799, No Iterations 67
+DICPCG:  Solving for pcorr, Initial residual = 0.00693321, Final residual = 6.66303e-09, No Iterations 83
+time step continuity errors : sum local = 1.85724e-12, global = 8.71688e-15, cumulative = -8.07492e-09
+smoothSolver:  Solving for Ux, Initial residual = 0.020766, Final residual = 8.73283e-07, No Iterations 5
+smoothSolver:  Solving for Uz, Initial residual = 0.0272383, Final residual = 2.13491e-07, No Iterations 6
+DICPCG:  Solving for p, Initial residual = 0.0383216, Final residual = 3.65731e-05, No Iterations 64
+DICPCG:  Solving for p, Initial residual = 0.000683843, Final residual = 6.83067e-07, No Iterations 62
+time step continuity errors : sum local = 1.61424e-08, global = -1.0522e-10, cumulative = -8.18014e-09
+DICPCG:  Solving for p, Initial residual = 0.00924412, Final residual = 6.47672e-06, No Iterations 52
+DICPCG:  Solving for p, Initial residual = 0.000140087, Final residual = 1.30667e-07, No Iterations 55
+time step continuity errors : sum local = 3.0793e-09, global = 4.58016e-11, cumulative = -8.13434e-09
+DICPCG:  Solving for p, Initial residual = 0.00634541, Final residual = 6.27195e-06, No Iterations 30
+DICPCG:  Solving for p, Initial residual = 0.000104702, Final residual = 9.52466e-08, No Iterations 59
+time step continuity errors : sum local = 2.23787e-09, global = 4.75239e-11, cumulative = -8.08682e-09
+DICPCG:  Solving for p, Initial residual = 0.00436989, Final residual = 3.80405e-06, No Iterations 57
+DICPCG:  Solving for p, Initial residual = 7.51498e-05, Final residual = 8.58802e-09, No Iterations 67
+time step continuity errors : sum local = 2.01257e-10, global = -6.23493e-12, cumulative = -8.09305e-09
+ExecutionTime = 0.62 s  ClockTime = 3 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 14 of 30, time: 0.13, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.29137 max: 5.89477
+Time = 0.34
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.0325456, Final residual = 4.79269e-18, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.03964, Final residual = 5.36397e-28, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.000832377, No Iterations 67
+DICPCG:  Solving for pcorr, Initial residual = 0.00670306, Final residual = 7.8104e-09, No Iterations 83
+time step continuity errors : sum local = 2.36147e-12, global = 4.85236e-15, cumulative = -8.09305e-09
+smoothSolver:  Solving for Ux, Initial residual = 0.0195017, Final residual = 8.23371e-07, No Iterations 5
+smoothSolver:  Solving for Uz, Initial residual = 0.0256687, Final residual = 2.05724e-07, No Iterations 6
+DICPCG:  Solving for p, Initial residual = 0.0371846, Final residual = 3.35161e-05, No Iterations 64
+DICPCG:  Solving for p, Initial residual = 0.000663215, Final residual = 5.45684e-07, No Iterations 58
+time step continuity errors : sum local = 1.23798e-08, global = -2.22933e-10, cumulative = -8.31598e-09
+DICPCG:  Solving for p, Initial residual = 0.00863624, Final residual = 6.95345e-06, No Iterations 52
+DICPCG:  Solving for p, Initial residual = 0.000131824, Final residual = 1.27345e-07, No Iterations 55
+time step continuity errors : sum local = 2.8823e-09, global = 7.51995e-12, cumulative = -8.30846e-09
+DICPCG:  Solving for p, Initial residual = 0.00577557, Final residual = 4.56869e-06, No Iterations 52
+DICPCG:  Solving for p, Initial residual = 9.70728e-05, Final residual = 8.01626e-08, No Iterations 55
+time step continuity errors : sum local = 1.81005e-09, global = -2.20119e-12, cumulative = -8.31066e-09
+DICPCG:  Solving for p, Initial residual = 0.00393409, Final residual = 3.17207e-06, No Iterations 57
+DICPCG:  Solving for p, Initial residual = 6.91239e-05, Final residual = 8.25527e-09, No Iterations 66
+time step continuity errors : sum local = 1.8604e-10, global = -5.57402e-12, cumulative = -8.31624e-09
+ExecutionTime = 0.66 s  ClockTime = 3 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 15 of 30, time: 0.14, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.29991 max: 5.83863
+Time = 0.35
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.0315645, Final residual = 6.70159e-20, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.0346478, Final residual = 6.84337e-19, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.000853212, No Iterations 67
+DICPCG:  Solving for pcorr, Initial residual = 0.00603231, Final residual = 8.98719e-09, No Iterations 83
+time step continuity errors : sum local = 3.19483e-12, global = 1.18253e-14, cumulative = -8.31622e-09
+smoothSolver:  Solving for Ux, Initial residual = 0.01835, Final residual = 7.7147e-07, No Iterations 5
+smoothSolver:  Solving for Uz, Initial residual = 0.0242168, Final residual = 1.97143e-07, No Iterations 6
+DICPCG:  Solving for p, Initial residual = 0.0364843, Final residual = 3.18164e-05, No Iterations 64
+DICPCG:  Solving for p, Initial residual = 0.000643272, Final residual = 5.29767e-07, No Iterations 57
+time step continuity errors : sum local = 1.15645e-08, global = -4.24961e-10, cumulative = -8.74119e-09
+DICPCG:  Solving for p, Initial residual = 0.00796598, Final residual = 7.93279e-06, No Iterations 52
+DICPCG:  Solving for p, Initial residual = 0.000124415, Final residual = 1.08626e-07, No Iterations 56
+time step continuity errors : sum local = 2.36739e-09, global = 2.91683e-12, cumulative = -8.73827e-09
+DICPCG:  Solving for p, Initial residual = 0.00529727, Final residual = 4.13365e-06, No Iterations 52
+DICPCG:  Solving for p, Initial residual = 9.01393e-05, Final residual = 8.25754e-08, No Iterations 55
+time step continuity errors : sum local = 1.79624e-09, global = -1.42776e-11, cumulative = -8.75255e-09
+DICPCG:  Solving for p, Initial residual = 0.0035734, Final residual = 3.29891e-06, No Iterations 56
+DICPCG:  Solving for p, Initial residual = 6.4143e-05, Final residual = 7.35925e-09, No Iterations 66
+time step continuity errors : sum local = 1.59822e-10, global = -1.4741e-13, cumulative = -8.75269e-09
+ExecutionTime = 0.69 s  ClockTime = 3 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 16 of 30, time: 0.15, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.30789 max: 5.78902
+Time = 0.36
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.0306017, Final residual = 2.55395e-19, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.0306491, Final residual = 7.07526e-18, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.00084364, No Iterations 67
+DICPCG:  Solving for pcorr, Initial residual = 0.0084604, Final residual = 6.66924e-09, No Iterations 84
+time step continuity errors : sum local = 1.80778e-12, global = -2.87561e-14, cumulative = -8.75272e-09
+smoothSolver:  Solving for Ux, Initial residual = 0.0172901, Final residual = 7.21755e-07, No Iterations 5
+smoothSolver:  Solving for Uz, Initial residual = 0.0228875, Final residual = 1.8745e-07, No Iterations 6
+DICPCG:  Solving for p, Initial residual = 0.0350843, Final residual = 3.18916e-05, No Iterations 64
+DICPCG:  Solving for p, Initial residual = 0.000623381, Final residual = 6.02137e-07, No Iterations 61
+time step continuity errors : sum local = 1.27593e-08, global = 2.2922e-10, cumulative = -8.5235e-09
+DICPCG:  Solving for p, Initial residual = 0.00744956, Final residual = 6.78794e-06, No Iterations 57
+DICPCG:  Solving for p, Initial residual = 0.00011474, Final residual = 1.12942e-07, No Iterations 59
+time step continuity errors : sum local = 2.38989e-09, global = 6.633e-11, cumulative = -8.45717e-09
+DICPCG:  Solving for p, Initial residual = 0.00483874, Final residual = 4.02661e-06, No Iterations 52
+DICPCG:  Solving for p, Initial residual = 8.29255e-05, Final residual = 7.51166e-08, No Iterations 56
+time step continuity errors : sum local = 1.58699e-09, global = -5.17106e-12, cumulative = -8.46234e-09
+DICPCG:  Solving for p, Initial residual = 0.00323547, Final residual = 2.99155e-06, No Iterations 53
+DICPCG:  Solving for p, Initial residual = 5.82353e-05, Final residual = 8.14556e-09, No Iterations 65
+time step continuity errors : sum local = 1.71858e-10, global = -2.39554e-12, cumulative = -8.46474e-09
+ExecutionTime = 0.73 s  ClockTime = 3 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 17 of 30, time: 0.16, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.31537 max: 5.74643
+Time = 0.37
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.0296824, Final residual = 2.25456e-18, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.0303091, Final residual = 6.08596e-19, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.000846389, No Iterations 67
+DICPCG:  Solving for pcorr, Initial residual = 0.00779088, Final residual = 6.82141e-09, No Iterations 84
+time step continuity errors : sum local = 2.27327e-12, global = -1.82985e-14, cumulative = -8.46476e-09
+smoothSolver:  Solving for Ux, Initial residual = 0.0163386, Final residual = 6.74858e-07, No Iterations 5
+smoothSolver:  Solving for Uz, Initial residual = 0.0216567, Final residual = 1.77886e-07, No Iterations 6
+DICPCG:  Solving for p, Initial residual = 0.034464, Final residual = 3.43107e-05, No Iterations 64
+DICPCG:  Solving for p, Initial residual = 0.000604827, Final residual = 5.72777e-07, No Iterations 58
+time step continuity errors : sum local = 1.17314e-08, global = -2.76504e-10, cumulative = -8.74126e-09
+DICPCG:  Solving for p, Initial residual = 0.00694916, Final residual = 6.68091e-06, No Iterations 57
+DICPCG:  Solving for p, Initial residual = 0.000108084, Final residual = 1.01622e-07, No Iterations 60
+time step continuity errors : sum local = 2.07871e-09, global = 4.97067e-11, cumulative = -8.69155e-09
+DICPCG:  Solving for p, Initial residual = 0.00451248, Final residual = 4.05249e-06, No Iterations 52
+DICPCG:  Solving for p, Initial residual = 7.79712e-05, Final residual = 7.39613e-08, No Iterations 55
+time step continuity errors : sum local = 1.51084e-09, global = -3.2749e-11, cumulative = -8.7243e-09
+DICPCG:  Solving for p, Initial residual = 0.00299355, Final residual = 2.91823e-06, No Iterations 53
+DICPCG:  Solving for p, Initial residual = 5.44708e-05, Final residual = 9.20032e-09, No Iterations 60
+time step continuity errors : sum local = 1.87711e-10, global = 2.07798e-12, cumulative = -8.72223e-09
+ExecutionTime = 0.76 s  ClockTime = 3 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 18 of 30, time: 0.17, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.32231 max: 5.71006
+Time = 0.38
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.0287882, Final residual = 7.0473e-28, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.0309214, Final residual = 5.42144e-28, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.000840146, No Iterations 67
+DICPCG:  Solving for pcorr, Initial residual = 0.00847981, Final residual = 7.21567e-09, No Iterations 84
+time step continuity errors : sum local = 2.48632e-12, global = -1.1635e-14, cumulative = -8.72224e-09
+smoothSolver:  Solving for Ux, Initial residual = 0.0154334, Final residual = 6.31731e-07, No Iterations 5
+smoothSolver:  Solving for Uz, Initial residual = 0.0205016, Final residual = 1.67396e-07, No Iterations 6
+DICPCG:  Solving for p, Initial residual = 0.0331608, Final residual = 2.89446e-05, No Iterations 65
+DICPCG:  Solving for p, Initial residual = 0.00057848, Final residual = 5.66842e-07, No Iterations 59
+time step continuity errors : sum local = 1.12677e-08, global = -8.24273e-11, cumulative = -8.80466e-09
+DICPCG:  Solving for p, Initial residual = 0.00658736, Final residual = 6.10715e-06, No Iterations 57
+DICPCG:  Solving for p, Initial residual = 0.000102007, Final residual = 8.27843e-08, No Iterations 61
+time step continuity errors : sum local = 1.64354e-09, global = 1.95312e-11, cumulative = -8.78513e-09
+DICPCG:  Solving for p, Initial residual = 0.00420374, Final residual = 3.94542e-06, No Iterations 53
+DICPCG:  Solving for p, Initial residual = 7.34065e-05, Final residual = 6.87319e-08, No Iterations 55
+time step continuity errors : sum local = 1.3628e-09, global = -3.96413e-11, cumulative = -8.82477e-09
+DICPCG:  Solving for p, Initial residual = 0.002758, Final residual = 2.64341e-06, No Iterations 55
+DICPCG:  Solving for p, Initial residual = 5.09301e-05, Final residual = 8.09468e-09, No Iterations 62
+time step continuity errors : sum local = 1.60313e-10, global = -2.06512e-12, cumulative = -8.82684e-09
+ExecutionTime = 0.8 s  ClockTime = 3 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 19 of 30, time: 0.18, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.3288 max: 5.67941
+Time = 0.39
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.0279101, Final residual = 1.78424e-17, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.0299331, Final residual = 1.37618e-19, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.000830888, No Iterations 67
+DICPCG:  Solving for pcorr, Initial residual = 0.0106168, Final residual = 8.38195e-09, No Iterations 84
+time step continuity errors : sum local = 2.54938e-12, global = -2.78111e-14, cumulative = -8.82687e-09
+smoothSolver:  Solving for Ux, Initial residual = 0.0145974, Final residual = 5.89314e-07, No Iterations 5
+smoothSolver:  Solving for Uz, Initial residual = 0.0194267, Final residual = 9.81946e-07, No Iterations 5
+DICPCG:  Solving for p, Initial residual = 0.0323673, Final residual = 3.03008e-05, No Iterations 63
+DICPCG:  Solving for p, Initial residual = 0.000558852, Final residual = 5.13665e-07, No Iterations 64
+time step continuity errors : sum local = 9.95313e-09, global = 3.62236e-10, cumulative = -8.46463e-09
+DICPCG:  Solving for p, Initial residual = 0.00613694, Final residual = 5.80542e-06, No Iterations 54
+DICPCG:  Solving for p, Initial residual = 9.72011e-05, Final residual = 8.3838e-08, No Iterations 61
+time step continuity errors : sum local = 1.62256e-09, global = 1.94386e-11, cumulative = -8.44519e-09
+DICPCG:  Solving for p, Initial residual = 0.00392242, Final residual = 3.07094e-06, No Iterations 54
+DICPCG:  Solving for p, Initial residual = 6.88423e-05, Final residual = 5.53001e-08, No Iterations 56
+time step continuity errors : sum local = 1.06905e-09, global = -3.20521e-11, cumulative = -8.47724e-09
+DICPCG:  Solving for p, Initial residual = 0.00256223, Final residual = 2.17288e-06, No Iterations 56
+DICPCG:  Solving for p, Initial residual = 4.77453e-05, Final residual = 9.30222e-09, No Iterations 65
+time step continuity errors : sum local = 1.79646e-10, global = 9.58115e-13, cumulative = -8.47629e-09
+ExecutionTime = 0.83 s  ClockTime = 3 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 20 of 30, time: 0.19, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.33483 max: 5.65392
+Time = 0.4
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.0270674, Final residual = 5.13309e-18, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.0289792, Final residual = 5.46983e-28, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.000834821, No Iterations 67
+DICPCG:  Solving for pcorr, Initial residual = 0.00943172, Final residual = 8.10864e-09, No Iterations 84
+time step continuity errors : sum local = 3.11253e-12, global = -7.12746e-15, cumulative = -8.47629e-09
+smoothSolver:  Solving for Ux, Initial residual = 0.0138271, Final residual = 5.49747e-07, No Iterations 5
+smoothSolver:  Solving for Uz, Initial residual = 0.0184023, Final residual = 9.22475e-07, No Iterations 5
+DICPCG:  Solving for p, Initial residual = 0.0309973, Final residual = 2.82546e-05, No Iterations 64
+DICPCG:  Solving for p, Initial residual = 0.000538761, Final residual = 4.17569e-07, No Iterations 64
+time step continuity errors : sum local = 7.85357e-09, global = 2.4792e-10, cumulative = -8.22837e-09
+DICPCG:  Solving for p, Initial residual = 0.00585159, Final residual = 5.83947e-06, No Iterations 32
+DICPCG:  Solving for p, Initial residual = 9.28638e-05, Final residual = 8.68566e-08, No Iterations 61
+time step continuity errors : sum local = 1.63194e-09, global = 1.92375e-11, cumulative = -8.20914e-09
+DICPCG:  Solving for p, Initial residual = 0.00368908, Final residual = 3.21543e-06, No Iterations 54
+DICPCG:  Solving for p, Initial residual = 6.6346e-05, Final residual = 6.14032e-08, No Iterations 56
+time step continuity errors : sum local = 1.15255e-09, global = -2.70365e-11, cumulative = -8.23617e-09
+DICPCG:  Solving for p, Initial residual = 0.00238713, Final residual = 2.08157e-06, No Iterations 56
+DICPCG:  Solving for p, Initial residual = 4.56265e-05, Final residual = 9.121e-09, No Iterations 65
+time step continuity errors : sum local = 1.71055e-10, global = 1.25295e-12, cumulative = -8.23492e-09
+ExecutionTime = 0.89 s  ClockTime = 3 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 21 of 30, time: 0.2, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.34042 max: 5.63243
+Time = 0.41
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.0262577, Final residual = 3.28747e-18, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.0288279, Final residual = 6.22418e-20, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.000831193, No Iterations 67
+DICPCG:  Solving for pcorr, Initial residual = 0.0109549, Final residual = 8.9544e-09, No Iterations 84
+time step continuity errors : sum local = 3.3001e-12, global = -1.74027e-14, cumulative = -8.23494e-09
+smoothSolver:  Solving for Ux, Initial residual = 0.0130974, Final residual = 5.13124e-07, No Iterations 5
+smoothSolver:  Solving for Uz, Initial residual = 0.0174441, Final residual = 8.68377e-07, No Iterations 5
+DICPCG:  Solving for p, Initial residual = 0.0304068, Final residual = 2.47746e-05, No Iterations 59
+DICPCG:  Solving for p, Initial residual = 0.000521005, Final residual = 4.60182e-07, No Iterations 64
+time step continuity errors : sum local = 8.5146e-09, global = 2.57756e-10, cumulative = -7.97718e-09
+DICPCG:  Solving for p, Initial residual = 0.00553982, Final residual = 4.82273e-06, No Iterations 33
+DICPCG:  Solving for p, Initial residual = 8.76322e-05, Final residual = 8.05263e-08, No Iterations 61
+time step continuity errors : sum local = 1.48915e-09, global = 1.62288e-11, cumulative = -7.96095e-09
+DICPCG:  Solving for p, Initial residual = 0.00345962, Final residual = 3.21896e-06, No Iterations 54
+DICPCG:  Solving for p, Initial residual = 6.29699e-05, Final residual = 5.72349e-08, No Iterations 57
+time step continuity errors : sum local = 1.0578e-09, global = -1.31672e-11, cumulative = -7.97412e-09
+DICPCG:  Solving for p, Initial residual = 0.00221587, Final residual = 1.93798e-06, No Iterations 56
+DICPCG:  Solving for p, Initial residual = 4.30626e-05, Final residual = 9.60009e-09, No Iterations 65
+time step continuity errors : sum local = 1.77342e-10, global = 2.12072e-12, cumulative = -7.972e-09
+ExecutionTime = 0.93 s  ClockTime = 3 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 22 of 30, time: 0.21, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.34557 max: 5.61439
+Time = 0.42
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.0254916, Final residual = 7.20552e-28, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.0292768, Final residual = 2.35939e-18, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.000826513, No Iterations 67
+DICPCG:  Solving for pcorr, Initial residual = 0.0122865, Final residual = 9.53765e-09, No Iterations 84
+time step continuity errors : sum local = 3.53829e-12, global = -2.40259e-14, cumulative = -7.97202e-09
+smoothSolver:  Solving for Ux, Initial residual = 0.0124139, Final residual = 4.77696e-07, No Iterations 5
+smoothSolver:  Solving for Uz, Initial residual = 0.0165248, Final residual = 8.14128e-07, No Iterations 5
+DICPCG:  Solving for p, Initial residual = 0.0290193, Final residual = 2.88463e-05, No Iterations 58
+DICPCG:  Solving for p, Initial residual = 0.000504466, Final residual = 4.28403e-07, No Iterations 64
+time step continuity errors : sum local = 7.84469e-09, global = 2.30582e-10, cumulative = -7.74144e-09
+DICPCG:  Solving for p, Initial residual = 0.00521526, Final residual = 4.65328e-06, No Iterations 55
+DICPCG:  Solving for p, Initial residual = 8.44163e-05, Final residual = 5.94032e-08, No Iterations 62
+time step continuity errors : sum local = 1.08739e-09, global = 4.48936e-12, cumulative = -7.73695e-09
+DICPCG:  Solving for p, Initial residual = 0.00324635, Final residual = 2.66668e-06, No Iterations 55
+DICPCG:  Solving for p, Initial residual = 6.00827e-05, Final residual = 5.85369e-08, No Iterations 56
+time step continuity errors : sum local = 1.07105e-09, global = -2.25808e-11, cumulative = -7.75953e-09
+DICPCG:  Solving for p, Initial residual = 0.00206336, Final residual = 1.8519e-06, No Iterations 56
+DICPCG:  Solving for p, Initial residual = 4.1255e-05, Final residual = 9.27677e-09, No Iterations 65
+time step continuity errors : sum local = 1.69674e-10, global = 2.32845e-12, cumulative = -7.7572e-09
+ExecutionTime = 0.96 s  ClockTime = 3 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 23 of 30, time: 0.22, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.35039 max: 5.59901
+Time = 0.43
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.0247471, Final residual = 7.25164e-28, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.0293602, Final residual = 3.57303e-18, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.000820354, No Iterations 67
+DICPCG:  Solving for pcorr, Initial residual = 0.0119822, Final residual = 9.96912e-09, No Iterations 84
+time step continuity errors : sum local = 4.26861e-12, global = -1.56156e-15, cumulative = -7.75721e-09
+smoothSolver:  Solving for Ux, Initial residual = 0.0117837, Final residual = 4.44837e-07, No Iterations 5
+smoothSolver:  Solving for Uz, Initial residual = 0.0156743, Final residual = 7.64741e-07, No Iterations 5
+DICPCG:  Solving for p, Initial residual = 0.0277015, Final residual = 2.18167e-05, No Iterations 59
+DICPCG:  Solving for p, Initial residual = 0.000473735, Final residual = 3.82055e-07, No Iterations 64
+time step continuity errors : sum local = 7.0441e-09, global = 1.63959e-10, cumulative = -7.59325e-09
+DICPCG:  Solving for p, Initial residual = 0.00487745, Final residual = 4.57239e-06, No Iterations 55
+DICPCG:  Solving for p, Initial residual = 8.08535e-05, Final residual = 5.77086e-08, No Iterations 62
+time step continuity errors : sum local = 1.06474e-09, global = 3.93537e-12, cumulative = -7.58931e-09
+DICPCG:  Solving for p, Initial residual = 0.00302324, Final residual = 2.75316e-06, No Iterations 55
+DICPCG:  Solving for p, Initial residual = 5.77698e-05, Final residual = 5.74715e-08, No Iterations 57
+time step continuity errors : sum local = 1.06067e-09, global = -7.53732e-12, cumulative = -7.59685e-09
+DICPCG:  Solving for p, Initial residual = 0.00191891, Final residual = 1.80339e-06, No Iterations 56
+DICPCG:  Solving for p, Initial residual = 3.96929e-05, Final residual = 9.22158e-09, No Iterations 65
+time step continuity errors : sum local = 1.70266e-10, global = 2.58241e-12, cumulative = -7.59427e-09
+ExecutionTime = 1 s  ClockTime = 3 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 24 of 30, time: 0.23, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.35481 max: 5.58564
+Time = 0.44
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.0240313, Final residual = 7.30023e-28, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.0287077, Final residual = 3.38431e-18, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.000810001, No Iterations 67
+DICPCG:  Solving for pcorr, Initial residual = 0.0144384, Final residual = 6.76396e-09, No Iterations 85
+time step continuity errors : sum local = 2.64646e-12, global = -2.86065e-14, cumulative = -7.59429e-09
+smoothSolver:  Solving for Ux, Initial residual = 0.0111751, Final residual = 4.12637e-07, No Iterations 5
+smoothSolver:  Solving for Uz, Initial residual = 0.0148508, Final residual = 7.17813e-07, No Iterations 5
+DICPCG:  Solving for p, Initial residual = 0.0260949, Final residual = 2.28823e-05, No Iterations 59
+DICPCG:  Solving for p, Initial residual = 0.000455255, Final residual = 3.56156e-07, No Iterations 64
+time step continuity errors : sum local = 6.63254e-09, global = 1.56435e-10, cumulative = -7.43786e-09
+DICPCG:  Solving for p, Initial residual = 0.00452826, Final residual = 4.17108e-06, No Iterations 55
+DICPCG:  Solving for p, Initial residual = 7.73376e-05, Final residual = 7.45206e-08, No Iterations 60
+time step continuity errors : sum local = 1.38892e-09, global = 1.65465e-11, cumulative = -7.42131e-09
+DICPCG:  Solving for p, Initial residual = 0.00280595, Final residual = 2.72912e-06, No Iterations 55
+DICPCG:  Solving for p, Initial residual = 5.56935e-05, Final residual = 4.93188e-08, No Iterations 58
+time step continuity errors : sum local = 9.19494e-10, global = 1.89634e-12, cumulative = -7.41942e-09
+DICPCG:  Solving for p, Initial residual = 0.00177346, Final residual = 1.69241e-06, No Iterations 56
+DICPCG:  Solving for p, Initial residual = 3.83531e-05, Final residual = 8.76243e-09, No Iterations 65
+time step continuity errors : sum local = 1.63435e-10, global = 2.65799e-12, cumulative = -7.41676e-09
+ExecutionTime = 1.04 s  ClockTime = 3 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 25 of 30, time: 0.24, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.35885 max: 5.57428
+Time = 0.45
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.0233426, Final residual = 2.8433e-18, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.0275199, Final residual = 6.42607e-18, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.000790174, No Iterations 67
+DICPCG:  Solving for pcorr, Initial residual = 0.0149327, Final residual = 7.23297e-09, No Iterations 85
+time step continuity errors : sum local = 2.99412e-12, global = -2.05447e-14, cumulative = -7.41678e-09
+smoothSolver:  Solving for Ux, Initial residual = 0.0106055, Final residual = 3.82168e-07, No Iterations 5
+smoothSolver:  Solving for Uz, Initial residual = 0.0141046, Final residual = 6.73917e-07, No Iterations 5
+DICPCG:  Solving for p, Initial residual = 0.0243322, Final residual = 1.93038e-05, No Iterations 59
+DICPCG:  Solving for p, Initial residual = 0.00043046, Final residual = 3.30196e-07, No Iterations 64
+time step continuity errors : sum local = 6.21588e-09, global = 1.34333e-10, cumulative = -7.28244e-09
+DICPCG:  Solving for p, Initial residual = 0.00425158, Final residual = 3.49904e-06, No Iterations 55
+DICPCG:  Solving for p, Initial residual = 7.43765e-05, Final residual = 6.1419e-08, No Iterations 59
+time step continuity errors : sum local = 1.15723e-09, global = 1.63526e-11, cumulative = -7.26609e-09
+DICPCG:  Solving for p, Initial residual = 0.00261978, Final residual = 2.2686e-06, No Iterations 56
+DICPCG:  Solving for p, Initial residual = 5.40585e-05, Final residual = 4.91757e-08, No Iterations 58
+time step continuity errors : sum local = 9.26868e-10, global = 3.62477e-12, cumulative = -7.26247e-09
+DICPCG:  Solving for p, Initial residual = 0.00165002, Final residual = 1.63442e-06, No Iterations 56
+DICPCG:  Solving for p, Initial residual = 3.75299e-05, Final residual = 8.88495e-09, No Iterations 65
+time step continuity errors : sum local = 1.67535e-10, global = 2.23902e-12, cumulative = -7.26023e-09
+ExecutionTime = 1.07 s  ClockTime = 3 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 26 of 30, time: 0.25, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.36264 max: 5.56482
+Time = 0.46
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.0226685, Final residual = 7.39231e-28, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.0266943, Final residual = 9.18101e-18, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.000771459, No Iterations 67
+DICPCG:  Solving for pcorr, Initial residual = 0.0151964, Final residual = 7.80979e-09, No Iterations 85
+time step continuity errors : sum local = 3.46081e-12, global = -9.84845e-15, cumulative = -7.26024e-09
+smoothSolver:  Solving for Ux, Initial residual = 0.0100676, Final residual = 3.53706e-07, No Iterations 5
+smoothSolver:  Solving for Uz, Initial residual = 0.013369, Final residual = 6.34815e-07, No Iterations 5
+DICPCG:  Solving for p, Initial residual = 0.0228443, Final residual = 2.17253e-05, No Iterations 59
+DICPCG:  Solving for p, Initial residual = 0.00041543, Final residual = 3.35227e-07, No Iterations 64
+time step continuity errors : sum local = 6.36733e-09, global = 1.18523e-10, cumulative = -7.14172e-09
+DICPCG:  Solving for p, Initial residual = 0.00395523, Final residual = 3.8964e-06, No Iterations 54
+DICPCG:  Solving for p, Initial residual = 7.21782e-05, Final residual = 5.59914e-08, No Iterations 58
+time step continuity errors : sum local = 1.06453e-09, global = 1.06044e-11, cumulative = -7.13111e-09
+DICPCG:  Solving for p, Initial residual = 0.00243476, Final residual = 2.29724e-06, No Iterations 56
+DICPCG:  Solving for p, Initial residual = 5.26046e-05, Final residual = 5.21195e-08, No Iterations 58
+time step continuity errors : sum local = 9.91253e-10, global = 9.57894e-12, cumulative = -7.12153e-09
+DICPCG:  Solving for p, Initial residual = 0.00153567, Final residual = 1.35791e-06, No Iterations 57
+DICPCG:  Solving for p, Initial residual = 3.64512e-05, Final residual = 9.08198e-09, No Iterations 65
+time step continuity errors : sum local = 1.72796e-10, global = 1.89501e-12, cumulative = -7.11964e-09
+ExecutionTime = 1.11 s  ClockTime = 3 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 27 of 30, time: 0.26, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.36602 max: 5.55705
+Time = 0.47
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.0220199, Final residual = 2.65656e-18, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.0262482, Final residual = 5.68372e-28, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.000751303, No Iterations 67
+DICPCG:  Solving for pcorr, Initial residual = 0.0174587, Final residual = 8.83077e-09, No Iterations 85
+time step continuity errors : sum local = 3.69506e-12, global = -1.90287e-14, cumulative = -7.11966e-09
+smoothSolver:  Solving for Ux, Initial residual = 0.00955182, Final residual = 3.24613e-07, No Iterations 5
+smoothSolver:  Solving for Uz, Initial residual = 0.0127044, Final residual = 5.98394e-07, No Iterations 5
+DICPCG:  Solving for p, Initial residual = 0.0215321, Final residual = 1.97662e-05, No Iterations 64
+DICPCG:  Solving for p, Initial residual = 0.000406061, Final residual = 3.04073e-07, No Iterations 64
+time step continuity errors : sum local = 5.79708e-09, global = 1.17809e-10, cumulative = -7.00185e-09
+DICPCG:  Solving for p, Initial residual = 0.00372192, Final residual = 3.60171e-06, No Iterations 54
+DICPCG:  Solving for p, Initial residual = 6.96301e-05, Final residual = 6.82319e-08, No Iterations 57
+time step continuity errors : sum local = 1.30232e-09, global = 5.28974e-12, cumulative = -6.99656e-09
+DICPCG:  Solving for p, Initial residual = 0.0022655, Final residual = 2.09646e-06, No Iterations 57
+DICPCG:  Solving for p, Initial residual = 5.10816e-05, Final residual = 3.91913e-08, No Iterations 59
+time step continuity errors : sum local = 7.48374e-10, global = 1.05453e-11, cumulative = -6.98601e-09
+DICPCG:  Solving for p, Initial residual = 0.00142622, Final residual = 1.38297e-06, No Iterations 57
+DICPCG:  Solving for p, Initial residual = 3.54958e-05, Final residual = 9.159e-09, No Iterations 65
+time step continuity errors : sum local = 1.74972e-10, global = 1.67901e-12, cumulative = -6.98433e-09
+ExecutionTime = 1.15 s  ClockTime = 3 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 28 of 30, time: 0.27, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.3691 max: 5.55077
+Time = 0.48
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.0214331, Final residual = 7.4663e-28, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.0257607, Final residual = 2.96503e-18, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.000734207, No Iterations 67
+DICPCG:  Solving for pcorr, Initial residual = 0.017071, Final residual = 9.00873e-09, No Iterations 85
+time step continuity errors : sum local = 4.20064e-12, global = -6.12185e-15, cumulative = -6.98434e-09
+smoothSolver:  Solving for Ux, Initial residual = 0.00907536, Final residual = 2.98689e-07, No Iterations 5
+smoothSolver:  Solving for Uz, Initial residual = 0.0120503, Final residual = 5.64967e-07, No Iterations 5
+DICPCG:  Solving for p, Initial residual = 0.0202512, Final residual = 1.99061e-05, No Iterations 38
+DICPCG:  Solving for p, Initial residual = 0.000392291, Final residual = 3.06146e-07, No Iterations 57
+time step continuity errors : sum local = 5.86856e-09, global = -1.3112e-10, cumulative = -7.11546e-09
+DICPCG:  Solving for p, Initial residual = 0.00352478, Final residual = 3.47343e-06, No Iterations 54
+DICPCG:  Solving for p, Initial residual = 6.79534e-05, Final residual = 5.09648e-08, No Iterations 58
+time step continuity errors : sum local = 9.78279e-10, global = 7.23724e-12, cumulative = -7.10822e-09
+DICPCG:  Solving for p, Initial residual = 0.00214446, Final residual = 2.1421e-06, No Iterations 57
+DICPCG:  Solving for p, Initial residual = 5.02591e-05, Final residual = 4.7917e-08, No Iterations 59
+time step continuity errors : sum local = 9.20264e-10, global = 1.44406e-11, cumulative = -7.09378e-09
+DICPCG:  Solving for p, Initial residual = 0.00134528, Final residual = 1.21991e-06, No Iterations 58
+DICPCG:  Solving for p, Initial residual = 3.48373e-05, Final residual = 8.01264e-09, No Iterations 66
+time step continuity errors : sum local = 1.53957e-10, global = -3.44994e-13, cumulative = -7.09413e-09
+ExecutionTime = 1.18 s  ClockTime = 3 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 29 of 30, time: 0.28, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.37193 max: 5.54554
+Time = 0.49
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.0208618, Final residual = 7.50357e-28, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.0250233, Final residual = 5.72622e-28, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.00072161, No Iterations 67
+DICPCG:  Solving for pcorr, Initial residual = 0.0179874, Final residual = 9.78726e-09, No Iterations 85
+time step continuity errors : sum local = 4.69809e-12, global = -3.66652e-15, cumulative = -7.09413e-09
+smoothSolver:  Solving for Ux, Initial residual = 0.00862164, Final residual = 2.71899e-07, No Iterations 5
+smoothSolver:  Solving for Uz, Initial residual = 0.0114589, Final residual = 5.36026e-07, No Iterations 5
+DICPCG:  Solving for p, Initial residual = 0.018977, Final residual = 1.87628e-05, No Iterations 62
+DICPCG:  Solving for p, Initial residual = 0.000388749, Final residual = 2.93051e-07, No Iterations 64
+time step continuity errors : sum local = 5.6281e-09, global = 1.13182e-10, cumulative = -6.98095e-09
+DICPCG:  Solving for p, Initial residual = 0.00327579, Final residual = 2.80046e-06, No Iterations 55
+DICPCG:  Solving for p, Initial residual = 6.64397e-05, Final residual = 5.15077e-08, No Iterations 58
+time step continuity errors : sum local = 9.90565e-10, global = 5.88966e-12, cumulative = -6.97506e-09
+DICPCG:  Solving for p, Initial residual = 0.00199373, Final residual = 1.98347e-06, No Iterations 57
+DICPCG:  Solving for p, Initial residual = 4.92004e-05, Final residual = 4.70808e-08, No Iterations 60
+time step continuity errors : sum local = 9.05951e-10, global = 1.71684e-11, cumulative = -6.95789e-09
+DICPCG:  Solving for p, Initial residual = 0.00124257, Final residual = 1.04743e-06, No Iterations 58
+DICPCG:  Solving for p, Initial residual = 3.40452e-05, Final residual = 8.1483e-09, No Iterations 66
+time step continuity errors : sum local = 1.56869e-10, global = -5.53377e-13, cumulative = -6.95844e-09
+ExecutionTime = 1.22 s  ClockTime = 3 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 30 of 30, time: 0.29, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+Courant Number mean: 1.37443 max: 5.54118
+Time = 0.5
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for cellDisplacementx, Initial residual = 0.02029, Final residual = 2.41431e-18, No Iterations 2
+smoothSolver:  Solving for cellDisplacementz, Initial residual = 0.0243359, Final residual = 5.75582e-28, No Iterations 2
+DICPCG:  Solving for pcorr, Initial residual = 1, Final residual = 0.000702058, No Iterations 67
+DICPCG:  Solving for pcorr, Initial residual = 0.0197692, Final residual = 6.12432e-09, No Iterations 86
+time step continuity errors : sum local = 2.88127e-12, global = 9.02294e-15, cumulative = -6.95844e-09
+smoothSolver:  Solving for Ux, Initial residual = 0.00820323, Final residual = 2.47552e-07, No Iterations 5
+smoothSolver:  Solving for Uz, Initial residual = 0.0108823, Final residual = 5.09805e-07, No Iterations 5
+DICPCG:  Solving for p, Initial residual = 0.0180016, Final residual = 1.7332e-05, No Iterations 61
+DICPCG:  Solving for p, Initial residual = 0.000383798, Final residual = 3.66138e-07, No Iterations 63
+time step continuity errors : sum local = 7.01933e-09, global = 1.39259e-10, cumulative = -6.81918e-09
+DICPCG:  Solving for p, Initial residual = 0.00306573, Final residual = 2.83443e-06, No Iterations 55
+DICPCG:  Solving for p, Initial residual = 6.53262e-05, Final residual = 5.12019e-08, No Iterations 58
+time step continuity errors : sum local = 9.83072e-10, global = 5.98831e-12, cumulative = -6.81319e-09
+DICPCG:  Solving for p, Initial residual = 0.00186379, Final residual = 1.81414e-06, No Iterations 57
+DICPCG:  Solving for p, Initial residual = 4.78104e-05, Final residual = 4.38814e-08, No Iterations 61
+time step continuity errors : sum local = 8.43061e-10, global = 1.30998e-11, cumulative = -6.80009e-09
+DICPCG:  Solving for p, Initial residual = 0.00115818, Final residual = 1.14258e-06, No Iterations 57
+DICPCG:  Solving for p, Initial residual = 3.30211e-05, Final residual = 9.46433e-09, No Iterations 65
+time step continuity errors : sum local = 1.81923e-10, global = 1.61634e-12, cumulative = -6.79847e-09
+ExecutionTime = 1.28 s  ClockTime = 3 s
+
+---[preciceAdapter] [DEBUG] Writing coupling data...
+---[preciceAdapter] [DEBUG] Advancing preCICE...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 31 of 30, time: 0.3, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: no, time-window-complete: yes, 
+---[preciceAdapter] [DEBUG] Reading coupling data...
+---[preciceAdapter] [DEBUG] Adjusting the solver's timestep...
+---[preciceAdapter] [DEBUG] The solver's timestep is the same as the coupling timestep.
+---[preciceAdapter] The coupling completed.
+---[preciceAdapter] [DEBUG] Finalizing the preCICE solver interface...
+---[preciceAdapter] [DEBUG] Destroying the preCICE solver interface...
+---[preciceAdapter] [DEBUG] Deleting the interfaces...
+---[preciceAdapter] [DEBUG] Destroying the FSI module...
+---[preciceAdapter] The simulation was ended by preCICE. Calling the end() methods of any functionObject explicitly.
+End
+

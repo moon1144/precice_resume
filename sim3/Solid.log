@@ -1,0 +1,2455 @@
+
+************************************************************
+
+CalculiX Version 2.16, Copyright(C) 1998-2019 Guido Dhondt
+CalculiX comes with ABSOLUTELY NO WARRANTY. This is free
+software, and you are welcome to redistribute it under
+certain conditions, see gpl.htm
+
+************************************************************
+
+You are using an executable made on Mo 25. Nov 18:56:47 CET 2019
+ Decascading the MPC's
+
+ Determining the structure of the matrix:
+ number of equations
+ 240
+ number of nonzero lower triangular matrix elements
+ 3128
+
+Starting FSI analysis via preCICE using the geometrically non-linear CalculiX solver...
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+Setting up preCICE participant Calculix, using config file: config.yml
+---[precice] [0m This is preCICE version 2.2.0
+---[precice] [0m Revision info: v2.2.0
+---[precice] [0m Configuration: Release (Debug and Trace log unavailable)
+---[precice] [0m Configuring preCICE with configuration "./precice-config.xml"
+---[precice] [0m I am participant "Calculix"
+Set ID Found 
+Read data 'Forces0' found with ID # '2'.
+Write data 'Displacements0' found with ID # '3'.
+---[precice] [0m Setting up master communication to coupling partner/s
+---[precice] [0m Masters are connected
+---[precice] [0m Setting up preliminary slaves communication to coupling partner/s
+---[precice] [0m Prepare partition for mesh Solid
+---[precice] [0m Gather mesh Solid
+---[precice] [0m Send global mesh Solid
+---[precice] [0m Setting up slaves communication to coupling partner/s
+---[precice] [0m Slaves are connected
+---[precice] [0m iteration: 1, time-window: 1 of 30, time: 0, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: no, 
+Initializing coupling data
+Adapter writing coupling data...
+---[precice] [0m initializeData is skipped since no data has to be initialized.
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 1 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=0.000000e+00
+ actual step time=1.000000e-02
+ actual total time=2.100000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 2.015913
+ time avg. forc= 2.015913
+ largest residual force= 0.006560 in node 80 and dof 1
+ largest increment of disp= 1.944180e-03
+ largest correction to disp= 8.110135e-05 in node 83 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 2.015761
+ time avg. forc= 2.015761
+ largest residual force= 0.000000 in node 126 and dof 1
+ largest increment of disp= 1.944180e-03
+ largest correction to disp= 1.269454e-07 in node 126 and dof 1
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 2 of 30, time: 0.01, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 6.619716e-02
+ work performed by the damping forces = 0.000000e+00
+ netto work = 6.619716e-02
+
+ actual energy: 
+ internal energy = 2.717652e-01
+ kinetic energy = 8.542569e-01
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 1.126022e+00
+
+ energy increase = 6.547739e-02
+
+ energy balance (absolute) = -7.197652e-04 
+ energy balance (relative) = 0.084256 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 2 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=1.000000e-02
+ actual step time=2.000000e-02
+ actual total time=2.200000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 2.168764
+ time avg. forc= 2.092262
+ largest residual force= 0.005668 in node 79 and dof 1
+ largest increment of disp= 2.022646e-03
+ largest correction to disp= 7.315155e-05 in node 126 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 2.168656
+ time avg. forc= 2.092208
+ largest residual force= 0.000000 in node 79 and dof 1
+ largest increment of disp= 2.022646e-03
+ largest correction to disp= 8.502946e-08 in node 125 and dof 3
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 3 of 30, time: 0.02, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 1.359869e-01
+ work performed by the damping forces = 0.000000e+00
+ netto work = 1.359869e-01
+
+ actual energy: 
+ internal energy = 2.896688e-01
+ kinetic energy = 9.075226e-01
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 1.197191e+00
+
+ energy increase = 1.366467e-01
+
+ energy balance (absolute) = 6.597678e-04 
+ energy balance (relative) = 0.074898 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 3 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=2.000000e-02
+ actual step time=3.000000e-02
+ actual total time=2.300000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 2.317230
+ time avg. forc= 2.167216
+ largest residual force= 0.006161 in node 82 and dof 1
+ largest increment of disp= 2.075438e-03
+ largest correction to disp= 1.186391e-04 in node 82 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 2.317286
+ time avg. forc= 2.167234
+ largest residual force= 0.000000 in node 82 and dof 1
+ largest increment of disp= 2.075438e-03
+ largest correction to disp= 1.471155e-07 in node 82 and dof 1
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 4 of 30, time: 0.03, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 2.324677e-01
+ work performed by the damping forces = 0.000000e+00
+ netto work = 2.324677e-01
+
+ actual energy: 
+ internal energy = 3.086583e-01
+ kinetic energy = 9.845532e-01
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 1.293211e+00
+
+ energy increase = 2.326667e-01
+
+ energy balance (absolute) = 1.990323e-04 
+ energy balance (relative) = 0.021742 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 4 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=3.000000e-02
+ actual step time=4.000000e-02
+ actual total time=2.400000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 2.454056
+ time avg. forc= 2.238940
+ largest residual force= 0.006566 in node 84 and dof 1
+ largest increment of disp= 2.084295e-03
+ largest correction to disp= 8.626056e-05 in node 83 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 2.454035
+ time avg. forc= 2.238934
+ largest residual force= 0.000000 in node 84 and dof 1
+ largest increment of disp= 2.084295e-03
+ largest correction to disp= 1.129897e-07 in node 84 and dof 3
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 5 of 30, time: 0.04, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 3.349741e-01
+ work performed by the damping forces = 0.000000e+00
+ netto work = 3.349741e-01
+
+ actual energy: 
+ internal energy = 3.283235e-01
+ kinetic energy = 1.066815e+00
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 1.395139e+00
+
+ energy increase = 3.345942e-01
+
+ energy balance (absolute) = -3.799292e-04 
+ energy balance (relative) = 0.039855 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 5 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=4.000000e-02
+ actual step time=5.000000e-02
+ actual total time=2.500000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 2.590023
+ time avg. forc= 2.309152
+ largest residual force= 0.004384 in node 84 and dof 1
+ largest increment of disp= 2.173431e-03
+ largest correction to disp= 9.008872e-05 in node 84 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 2.589939
+ time avg. forc= 2.309135
+ largest residual force= 0.000000 in node 84 and dof 1
+ largest increment of disp= 2.173431e-03
+ largest correction to disp= 8.860508e-08 in node 84 and dof 1
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 6 of 30, time: 0.05, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 4.339876e-01
+ work performed by the damping forces = 0.000000e+00
+ netto work = 4.339876e-01
+
+ actual energy: 
+ internal energy = 3.492113e-01
+ kinetic energy = 1.145088e+00
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 1.494299e+00
+
+ energy increase = 4.337544e-01
+
+ energy balance (absolute) = -2.332299e-04 
+ energy balance (relative) = 0.023519 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 6 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=5.000000e-02
+ actual step time=6.000000e-02
+ actual total time=2.600000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 2.689666
+ time avg. forc= 2.372557
+ largest residual force= 0.006504 in node 80 and dof 1
+ largest increment of disp= 2.261410e-03
+ largest correction to disp= 9.361943e-05 in node 83 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 2.689602
+ time avg. forc= 2.372546
+ largest residual force= 0.000000 in node 80 and dof 1
+ largest increment of disp= 2.261410e-03
+ largest correction to disp= 7.304725e-08 in node 80 and dof 1
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 7 of 30, time: 0.06, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 5.328175e-01
+ work performed by the damping forces = 0.000000e+00
+ netto work = 5.328175e-01
+
+ actual energy: 
+ internal energy = 3.711564e-01
+ kinetic energy = 1.222009e+00
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 1.593166e+00
+
+ energy increase = 5.326210e-01
+
+ energy balance (absolute) = -1.965071e-04 
+ energy balance (relative) = 0.019078 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 7 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=6.000000e-02
+ actual step time=7.000000e-02
+ actual total time=2.700000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 2.809534
+ time avg. forc= 2.434973
+ largest residual force= 0.004355 in node 80 and dof 1
+ largest increment of disp= 2.425510e-03
+ largest correction to disp= 8.542156e-05 in node 126 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 2.809480
+ time avg. forc= 2.434966
+ largest residual force= 0.000000 in node 80 and dof 1
+ largest increment of disp= 2.425510e-03
+ largest correction to disp= 5.376441e-08 in node 80 and dof 3
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 8 of 30, time: 0.07, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 6.323550e-01
+ work performed by the damping forces = 0.000000e+00
+ netto work = 6.323550e-01
+
+ actual energy: 
+ internal energy = 3.944458e-01
+ kinetic energy = 1.298244e+00
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 1.692690e+00
+
+ energy increase = 6.321455e-01
+
+ energy balance (absolute) = -2.094999e-04 
+ energy balance (relative) = 0.019610 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 8 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=7.000000e-02
+ actual step time=8.000000e-02
+ actual total time=2.800000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 2.926903
+ time avg. forc= 2.496458
+ largest residual force= 0.001564 in node 80 and dof 1
+ largest increment of disp= 2.621889e-03
+ largest correction to disp= 6.098580e-05 in node 124 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 2.926887
+ time avg. forc= 2.496456
+ largest residual force= 0.000000 in node 80 and dof 1
+ largest increment of disp= 2.621889e-03
+ largest correction to disp= 2.738786e-08 in node 84 and dof 3
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 9 of 30, time: 0.08, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 7.321261e-01
+ work performed by the damping forces = 0.000000e+00
+ netto work = 7.321261e-01
+
+ actual energy: 
+ internal energy = 4.172462e-01
+ kinetic energy = 1.375207e+00
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 1.792453e+00
+
+ energy increase = 7.319084e-01
+
+ energy balance (absolute) = -2.176321e-04 
+ energy balance (relative) = 0.019665 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 9 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=8.000000e-02
+ actual step time=9.000000e-02
+ actual total time=2.900000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.062455
+ time avg. forc= 2.559345
+ largest residual force= 0.001839 in node 126 and dof 3
+ largest increment of disp= 2.767375e-03
+ largest correction to disp= 6.570535e-05 in node 126 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.062441
+ time avg. forc= 2.559343
+ largest residual force= 0.000000 in node 126 and dof 3
+ largest increment of disp= 2.767375e-03
+ largest correction to disp= 3.842366e-08 in node 126 and dof 3
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 10 of 30, time: 0.09, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 8.319718e-01
+ work performed by the damping forces = 0.000000e+00
+ netto work = 8.319718e-01
+
+ actual energy: 
+ internal energy = 4.392278e-01
+ kinetic energy = 1.453052e+00
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 1.892280e+00
+
+ energy increase = 8.317348e-01
+
+ energy balance (absolute) = -2.369964e-04 
+ energy balance (relative) = 0.020695 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 10 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=9.000000e-02
+ actual step time=1.000000e-01
+ actual total time=3.000000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.186797
+ time avg. forc= 2.622088
+ largest residual force= 0.001629 in node 76 and dof 1
+ largest increment of disp= 2.950220e-03
+ largest correction to disp= 5.886878e-05 in node 124 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.186772
+ time avg. forc= 2.622086
+ largest residual force= 0.000000 in node 126 and dof 3
+ largest increment of disp= 2.950220e-03
+ largest correction to disp= 4.519955e-08 in node 126 and dof 3
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 11 of 30, time: 0.1, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 9.314300e-01
+ work performed by the damping forces = 0.000000e+00
+ netto work = 9.314300e-01
+
+ actual energy: 
+ internal energy = 4.614512e-01
+ kinetic energy = 1.530262e+00
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 1.991714e+00
+
+ energy increase = 9.311688e-01
+
+ energy balance (absolute) = -2.611856e-04 
+ energy balance (relative) = 0.022065 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 11 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=1.000000e-01
+ actual step time=1.100000e-01
+ actual total time=3.100000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.277213
+ time avg. forc= 2.681643
+ largest residual force= 0.001169 in node 76 and dof 1
+ largest increment of disp= 3.116867e-03
+ largest correction to disp= 4.715771e-05 in node 76 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.277196
+ time avg. forc= 2.681641
+ largest residual force= 0.000000 in node 126 and dof 3
+ largest increment of disp= 3.116867e-03
+ largest correction to disp= 3.005000e-08 in node 126 and dof 3
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 12 of 30, time: 0.11, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 1.030242e+00
+ work performed by the damping forces = 0.000000e+00
+ netto work = 1.030242e+00
+
+ actual energy: 
+ internal energy = 4.848815e-01
+ kinetic energy = 1.605637e+00
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 2.090519e+00
+
+ energy increase = 1.029974e+00
+
+ energy balance (absolute) = -2.682705e-04 
+ energy balance (relative) = 0.021952 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 12 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=1.100000e-01
+ actual step time=1.200000e-01
+ actual total time=3.200000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.366962
+ time avg. forc= 2.738751
+ largest residual force= 0.001011 in node 120 and dof 1
+ largest increment of disp= 3.255266e-03
+ largest correction to disp= 4.290037e-05 in node 75 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.366963
+ time avg. forc= 2.738751
+ largest residual force= 0.000000 in node 120 and dof 1
+ largest increment of disp= 3.255266e-03
+ largest correction to disp= 1.450422e-08 in node 126 and dof 3
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 13 of 30, time: 0.12, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 1.128765e+00
+ work performed by the damping forces = 0.000000e+00
+ netto work = 1.128765e+00
+
+ actual energy: 
+ internal energy = 5.104823e-01
+ kinetic energy = 1.678566e+00
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 2.189049e+00
+
+ energy increase = 1.128504e+00
+
+ energy balance (absolute) = -2.610016e-04 
+ energy balance (relative) = 0.020713 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 13 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=1.200000e-01
+ actual step time=1.300000e-01
+ actual total time=3.300000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.463573
+ time avg. forc= 2.794507
+ largest residual force= 0.002368 in node 120 and dof 1
+ largest increment of disp= 3.375455e-03
+ largest correction to disp= 6.092562e-05 in node 120 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.463585
+ time avg. forc= 2.794508
+ largest residual force= 0.000000 in node 120 and dof 1
+ largest increment of disp= 3.375455e-03
+ largest correction to disp= 2.921247e-08 in node 120 and dof 1
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 14 of 30, time: 0.13, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 1.227268e+00
+ work performed by the damping forces = 0.000000e+00
+ netto work = 1.227268e+00
+
+ actual energy: 
+ internal energy = 5.369243e-01
+ kinetic energy = 1.750640e+00
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 2.287564e+00
+
+ energy increase = 1.227019e+00
+
+ energy balance (absolute) = -2.491891e-04 
+ energy balance (relative) = 0.019200 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 14 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=1.300000e-01
+ actual step time=1.400000e-01
+ actual total time=3.400000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.563957
+ time avg. forc= 2.849469
+ largest residual force= 0.001826 in node 120 and dof 1
+ largest increment of disp= 3.431018e-03
+ largest correction to disp= 4.569537e-05 in node 74 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.563958
+ time avg. forc= 2.849469
+ largest residual force= 0.000000 in node 120 and dof 1
+ largest increment of disp= 3.431018e-03
+ largest correction to disp= 2.397550e-08 in node 120 and dof 1
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 15 of 30, time: 0.14, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 1.325938e+00
+ work performed by the damping forces = 0.000000e+00
+ netto work = 1.325938e+00
+
+ actual energy: 
+ internal energy = 5.626777e-01
+ kinetic energy = 1.823553e+00
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 2.386230e+00
+
+ energy increase = 1.325685e+00
+
+ energy balance (absolute) = -2.521377e-04 
+ energy balance (relative) = 0.018881 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 15 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=1.400000e-01
+ actual step time=1.500000e-01
+ actual total time=3.500000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.658707
+ time avg. forc= 2.903418
+ largest residual force= 0.001122 in node 124 and dof 1
+ largest increment of disp= 3.535382e-03
+ largest correction to disp= 5.275634e-05 in node 83 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.658705
+ time avg. forc= 2.903418
+ largest residual force= 0.000000 in node 124 and dof 1
+ largest increment of disp= 3.535382e-03
+ largest correction to disp= 2.248970e-08 in node 84 and dof 3
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 16 of 30, time: 0.15, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 1.424310e+00
+ work performed by the damping forces = 0.000000e+00
+ netto work = 1.424310e+00
+
+ actual energy: 
+ internal energy = 5.878472e-01
+ kinetic energy = 1.896737e+00
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 2.484584e+00
+
+ energy increase = 1.424039e+00
+
+ energy balance (absolute) = -2.701869e-04 
+ energy balance (relative) = 0.019681 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 16 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=1.500000e-01
+ actual step time=1.600000e-01
+ actual total time=3.600000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.722104
+ time avg. forc= 2.954586
+ largest residual force= 0.000610 in node 75 and dof 3
+ largest increment of disp= 3.687857e-03
+ largest correction to disp= 6.194960e-05 in node 126 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.722099
+ time avg. forc= 2.954585
+ largest residual force= 0.000000 in node 126 and dof 1
+ largest increment of disp= 3.687857e-03
+ largest correction to disp= 1.283394e-08 in node 126 and dof 1
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 17 of 30, time: 0.16, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 1.521823e+00
+ work performed by the damping forces = 0.000000e+00
+ netto work = 1.521823e+00
+
+ actual energy: 
+ internal energy = 6.126078e-01
+ kinetic energy = 1.969476e+00
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 2.582084e+00
+
+ energy increase = 1.521539e+00
+
+ energy balance (absolute) = -2.843916e-04 
+ energy balance (relative) = 0.020168 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 17 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=1.600000e-01
+ actual step time=1.700000e-01
+ actual total time=3.700000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.757477
+ time avg. forc= 3.001814
+ largest residual force= 0.000923 in node 120 and dof 1
+ largest increment of disp= 3.877427e-03
+ largest correction to disp= 4.746072e-05 in node 82 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.757479
+ time avg. forc= 3.001814
+ largest residual force= 0.000000 in node 120 and dof 1
+ largest increment of disp= 3.877427e-03
+ largest correction to disp= 1.346745e-08 in node 126 and dof 3
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 18 of 30, time: 0.17, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 1.618212e+00
+ work performed by the damping forces = 0.000000e+00
+ netto work = 1.618212e+00
+
+ actual energy: 
+ internal energy = 6.377628e-01
+ kinetic energy = 2.040687e+00
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 2.678450e+00
+
+ energy increase = 1.617905e+00
+
+ energy balance (absolute) = -3.062862e-04 
+ energy balance (relative) = 0.021164 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 18 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=1.700000e-01
+ actual step time=1.800000e-01
+ actual total time=3.800000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.791438
+ time avg. forc= 3.045682
+ largest residual force= 0.001027 in node 120 and dof 1
+ largest increment of disp= 4.031114e-03
+ largest correction to disp= 4.682304e-05 in node 122 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.791442
+ time avg. forc= 3.045683
+ largest residual force= 0.000000 in node 120 and dof 1
+ largest increment of disp= 4.031114e-03
+ largest correction to disp= 1.205153e-08 in node 126 and dof 3
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 19 of 30, time: 0.18, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 1.713465e+00
+ work performed by the damping forces = 0.000000e+00
+ netto work = 1.713465e+00
+
+ actual energy: 
+ internal energy = 6.638091e-01
+ kinetic energy = 2.109877e+00
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 2.773686e+00
+
+ energy increase = 1.713141e+00
+
+ energy balance (absolute) = -3.233277e-04 
+ energy balance (relative) = 0.021787 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 19 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=1.800000e-01
+ actual step time=1.900000e-01
+ actual total time=3.900000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.838054
+ time avg. forc= 3.087386
+ largest residual force= 0.000442 in node 120 and dof 1
+ largest increment of disp= 4.146506e-03
+ largest correction to disp= 3.741391e-05 in node 75 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.838054
+ time avg. forc= 3.087386
+ largest residual force= 0.000000 in node 120 and dof 1
+ largest increment of disp= 4.146506e-03
+ largest correction to disp= 6.388163e-09 in node 120 and dof 1
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 20 of 30, time: 0.19, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 1.807506e+00
+ work performed by the damping forces = 0.000000e+00
+ netto work = 1.807506e+00
+
+ actual energy: 
+ internal energy = 6.888536e-01
+ kinetic energy = 2.178870e+00
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 2.867724e+00
+
+ energy increase = 1.807179e+00
+
+ energy balance (absolute) = -3.268581e-04 
+ energy balance (relative) = 0.021496 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 20 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=1.900000e-01
+ actual step time=2.000000e-01
+ actual total time=4.000000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.882399
+ time avg. forc= 3.127137
+ largest residual force= 0.000755 in node 68 and dof 1
+ largest increment of disp= 4.271410e-03
+ largest correction to disp= 4.445756e-05 in node 82 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.882394
+ time avg. forc= 3.127137
+ largest residual force= 0.000000 in node 68 and dof 1
+ largest increment of disp= 4.271410e-03
+ largest correction to disp= 9.680001e-09 in node 68 and dof 1
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 21 of 30, time: 0.2, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 1.900048e+00
+ work performed by the damping forces = 0.000000e+00
+ netto work = 1.900048e+00
+
+ actual energy: 
+ internal energy = 7.112360e-01
+ kinetic energy = 2.249027e+00
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 2.960263e+00
+
+ energy increase = 1.899718e+00
+
+ energy balance (absolute) = -3.301030e-04 
+ energy balance (relative) = 0.021201 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 21 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=2.000000e-01
+ actual step time=2.100000e-01
+ actual total time=4.100000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.915660
+ time avg. forc= 3.164685
+ largest residual force= 0.000527 in node 76 and dof 1
+ largest increment of disp= 4.406056e-03
+ largest correction to disp= 5.225718e-05 in node 126 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.915654
+ time avg. forc= 3.164685
+ largest residual force= 0.000000 in node 80 and dof 3
+ largest increment of disp= 4.406056e-03
+ largest correction to disp= 9.915428e-09 in node 80 and dof 3
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 22 of 30, time: 0.21, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 1.990865e+00
+ work performed by the damping forces = 0.000000e+00
+ netto work = 1.990865e+00
+
+ actual energy: 
+ internal energy = 7.305221e-01
+ kinetic energy = 2.320552e+00
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 3.051074e+00
+
+ energy increase = 1.990529e+00
+
+ energy balance (absolute) = -3.356392e-04 
+ energy balance (relative) = 0.021065 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 22 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=2.100000e-01
+ actual step time=2.200000e-01
+ actual total time=4.200000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.937192
+ time avg. forc= 3.199799
+ largest residual force= 0.000358 in node 72 and dof 1
+ largest increment of disp= 4.581107e-03
+ largest correction to disp= 4.704192e-05 in node 83 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.937189
+ time avg. forc= 3.199799
+ largest residual force= 0.000000 in node 72 and dof 1
+ largest increment of disp= 4.581107e-03
+ largest correction to disp= 3.864256e-09 in node 60 and dof 1
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 23 of 30, time: 0.22, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 2.079910e+00
+ work performed by the damping forces = 0.000000e+00
+ netto work = 2.079910e+00
+
+ actual energy: 
+ internal energy = 7.478751e-01
+ kinetic energy = 2.392254e+00
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 3.140129e+00
+
+ energy increase = 2.079584e+00
+
+ energy balance (absolute) = -3.259263e-04 
+ energy balance (relative) = 0.019999 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 23 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=2.200000e-01
+ actual step time=2.300000e-01
+ actual total time=4.300000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.960792
+ time avg. forc= 3.232886
+ largest residual force= 0.000290 in node 76 and dof 1
+ largest increment of disp= 4.740417e-03
+ largest correction to disp= 4.211409e-05 in node 126 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.960792
+ time avg. forc= 3.232886
+ largest residual force= 0.000000 in node 76 and dof 1
+ largest increment of disp= 4.740417e-03
+ largest correction to disp= 3.903126e-09 in node 76 and dof 1
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 24 of 30, time: 0.23, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 2.167447e+00
+ work performed by the damping forces = 0.000000e+00
+ netto work = 2.167447e+00
+
+ actual energy: 
+ internal energy = 7.650330e-01
+ kinetic energy = 2.462651e+00
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 3.227684e+00
+
+ energy increase = 2.167140e+00
+
+ energy balance (absolute) = -3.074876e-04 
+ energy balance (relative) = 0.018458 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 24 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=2.300000e-01
+ actual step time=2.400000e-01
+ actual total time=4.400000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.982187
+ time avg. forc= 3.264106
+ largest residual force= 0.000387 in node 68 and dof 1
+ largest increment of disp= 4.890736e-03
+ largest correction to disp= 4.398104e-05 in node 83 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.982185
+ time avg. forc= 3.264106
+ largest residual force= 0.000000 in node 68 and dof 1
+ largest increment of disp= 4.890736e-03
+ largest correction to disp= 5.187233e-09 in node 68 and dof 1
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 25 of 30, time: 0.24, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 2.253710e+00
+ work performed by the damping forces = 0.000000e+00
+ netto work = 2.253710e+00
+
+ actual energy: 
+ internal energy = 7.813806e-01
+ kinetic energy = 2.532581e+00
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 3.313962e+00
+
+ energy increase = 2.253417e+00
+
+ energy balance (absolute) = -2.925587e-04 
+ energy balance (relative) = 0.017189 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 25 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=2.400000e-01
+ actual step time=2.500000e-01
+ actual total time=4.500000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.990978
+ time avg. forc= 3.293181
+ largest residual force= 0.000317 in node 83 and dof 3
+ largest increment of disp= 5.044282e-03
+ largest correction to disp= 4.524619e-05 in node 84 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.990975
+ time avg. forc= 3.293181
+ largest residual force= 0.000000 in node 83 and dof 3
+ largest increment of disp= 5.044282e-03
+ largest correction to disp= 3.795080e-09 in node 60 and dof 1
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 26 of 30, time: 0.25, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 2.338750e+00
+ work performed by the damping forces = 0.000000e+00
+ netto work = 2.338750e+00
+
+ actual energy: 
+ internal energy = 7.958658e-01
+ kinetic energy = 2.603130e+00
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 3.398996e+00
+
+ energy increase = 2.338451e+00
+
+ energy balance (absolute) = -2.991420e-04 
+ energy balance (relative) = 0.017211 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 26 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=2.500000e-01
+ actual step time=2.600000e-01
+ actual total time=4.600000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.988490
+ time avg. forc= 3.319924
+ largest residual force= 0.000210 in node 32 and dof 1
+ largest increment of disp= 5.202781e-03
+ largest correction to disp= 3.350764e-05 in node 125 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.988486
+ time avg. forc= 3.319924
+ largest residual force= 0.000000 in node 76 and dof 1
+ largest increment of disp= 5.202781e-03
+ largest correction to disp= 3.472404e-09 in node 78 and dof 3
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 27 of 30, time: 0.26, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 2.422541e+00
+ work performed by the damping forces = 0.000000e+00
+ netto work = 2.422541e+00
+
+ actual energy: 
+ internal energy = 8.087282e-01
+ kinetic energy = 2.674020e+00
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 3.482748e+00
+
+ energy increase = 2.422204e+00
+
+ energy balance (absolute) = -3.373040e-04 
+ energy balance (relative) = 0.019013 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 27 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=2.600000e-01
+ actual step time=2.700000e-01
+ actual total time=4.700000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.978355
+ time avg. forc= 3.344310
+ largest residual force= 0.000186 in node 116 and dof 1
+ largest increment of disp= 5.332233e-03
+ largest correction to disp= 2.860713e-05 in node 118 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.978354
+ time avg. forc= 3.344310
+ largest residual force= 0.000000 in node 116 and dof 1
+ largest increment of disp= 5.332233e-03
+ largest correction to disp= 3.066451e-09 in node 126 and dof 3
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 28 of 30, time: 0.27, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 2.505142e+00
+ work performed by the damping forces = 0.000000e+00
+ netto work = 2.505142e+00
+
+ actual energy: 
+ internal energy = 8.206837e-01
+ kinetic energy = 2.744615e+00
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 3.565299e+00
+
+ energy increase = 2.504754e+00
+
+ energy balance (absolute) = -3.884494e-04 
+ energy balance (relative) = 0.021461 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 28 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=2.700000e-01
+ actual step time=2.800000e-01
+ actual total time=4.800000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.977451
+ time avg. forc= 3.366922
+ largest residual force= 0.000241 in node 116 and dof 1
+ largest increment of disp= 5.417180e-03
+ largest correction to disp= 3.461012e-05 in node 71 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 3.977448
+ time avg. forc= 3.366922
+ largest residual force= 0.000000 in node 116 and dof 1
+ largest increment of disp= 5.417180e-03
+ largest correction to disp= 3.239520e-09 in node 116 and dof 1
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 29 of 30, time: 0.28, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 2.586715e+00
+ work performed by the damping forces = 0.000000e+00
+ netto work = 2.586715e+00
+
+ actual energy: 
+ internal energy = 8.333433e-01
+ kinetic energy = 2.813477e+00
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 3.646821e+00
+
+ energy increase = 2.586276e+00
+
+ energy balance (absolute) = -4.390051e-04 
+ energy balance (relative) = 0.023784 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 29 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=2.800000e-01
+ actual step time=2.900000e-01
+ actual total time=4.900000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 4.001769
+ time avg. forc= 3.388813
+ largest residual force= 0.000300 in node 120 and dof 1
+ largest increment of disp= 5.459729e-03
+ largest correction to disp= 3.816539e-05 in node 120 and dof 1
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 4.001766
+ time avg. forc= 3.388813
+ largest residual force= 0.000000 in node 77 and dof 3
+ largest increment of disp= 5.459729e-03
+ largest correction to disp= 6.690517e-09 in node 84 and dof 1
+
+ convergence
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 30 of 30, time: 0.29, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: yes, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 2.667371e+00
+ work performed by the damping forces = 0.000000e+00
+ netto work = 2.667371e+00
+
+ actual energy: 
+ internal energy = 8.469313e-01
+ kinetic energy = 2.880496e+00
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 3.727428e+00
+
+ energy increase = 2.666883e+00
+
+ energy balance (absolute) = -4.882679e-04 
+ energy balance (relative) = 0.025951 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+Adjusting time step for transient step
+precice_dt dtheta = 0.033333, dtheta = 0.033333, solver_dt = 0.010000
+Adapter reading coupling data...
+Reading FORCES coupling data with ID '2'. 
+ increment 30 attempt 1 
+ increment size= 1.000000e-02
+ sum of previous increments=2.900000e-01
+ actual step time=3.000000e-01
+ actual total time=5.000000e-01
+
+ iteration 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 4.040913
+ time avg. forc= 3.410550
+ largest residual force= 0.000133 in node 124 and dof 1
+ largest increment of disp= 5.473038e-03
+ largest correction to disp= 3.803982e-05 in node 126 and dof 3
+
+ no convergence
+
+ iteration 2
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric spooles solver
+ Using 1 cpu for spooles.
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the energy calculation.
+
+ average force= 4.040911
+ time avg. forc= 3.410550
+ largest residual force= 0.000000 in node 126 and dof 3
+ largest increment of disp= 5.473038e-03
+ largest correction to disp= 3.085194e-09 in node 126 and dof 3
+
+ convergence
+
+ the increment size exceeds the remainder of the step and is decreased to 3.330669e-17
+
+Adapter writing coupling data...
+Writing DISPLACEMENTS coupling data with ID '3'. 
+Adapter calling advance()...
+---[precice] [0m Time window completed
+---[precice] [0m iteration: 1, time-window: 31 of 30, time: 0.3, time-window-size: 0.01, max-timestep-length: 0.01, ongoing: no, time-window-complete: yes, 
+ initial energy (at start of step) = 1.060545e+00
+
+ since start of the step: 
+ external work = 2.747181e+00
+ work performed by the damping forces = 0.000000e+00
+ netto work = 2.747181e+00
+
+ actual energy: 
+ internal energy = 8.602073e-01
+ kinetic energy = 2.946997e+00
+ elastic contact energy = 0.000000e+00
+ energy lost due to friction = 0.000000e+00
+ total energy  = 3.807204e+00
+
+ energy increase = 2.746660e+00
+
+ energy balance (absolute) = -5.217793e-04 
+ energy balance (relative) = 0.027218 % 
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+
+ *INFO: restart file Solid/flap.rin                                                                                                                      
+        has been opened for reading.
+        it was created with CalculiX Version 2.16                                                                    
+
+  The numbers below are estimated upper bounds
+
+  number of:
+
+   nodes:          126
+   elements:           40
+   one-dimensional elements:            0
+   two-dimensional elements:            0
+   integration points per element:           27
+   degrees of freedom per node:            3
+   layers per element:            1
+
+   distributed facial loads:            0
+   distributed volumetric loads:            0
+   concentrated loads:          258
+   single point constraints:          390
+   multiple point constraints:            1
+   terms in all multiple point constraints:            1
+   tie constraints:            0
+   dependent nodes tied by cyclic constraints:            0
+   dependent nodes in pre-tension constraints:            0
+
+   sets:            4
+   terms in all sets:          642
+
+   materials:            1
+   constants per material and temperature:            2
+   temperature points per material:            1
+   plastic data points per material:            0
+
+   orientations:            0
+   amplitudes:            0
+   data points in all amplitudes:            0
+   print requests:            0
+   transformations:            0
+   property cards:            0
+
+ *INFO reading *STEP: nonlinear geometric
+       effects are turned on
+
+
+ STEP            3
+
+ Dynamic analysis was selected
+
+ Newton-Raphson iterative procedure is active
+
+ Nonlinear geometric effects are taken into account
+
+
+ Job finished
+

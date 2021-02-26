@@ -1,0 +1,1011 @@
+{
+  "Finalized": "2021-02-26T14:00:04.920",
+  "Initialized": "2021-02-26T14:00:04.408",
+  "Name": "",
+  "Ranks": [
+    {
+      "Finalized": "2021-02-26T14:00:04.920",
+      "Initialized": "2021-02-26T14:00:04.408",
+      "StateChanges": [
+        {
+          "Name": "_GLOBAL",
+          "State": 1,
+          "Timestamp": 0
+        },
+        {
+          "Name": "_GLOBAL",
+          "State": 0,
+          "Timestamp": 511
+        },
+        {
+          "Name": "advance",
+          "State": 1,
+          "Timestamp": 82
+        },
+        {
+          "Name": "advance",
+          "State": 0,
+          "Timestamp": 89
+        },
+        {
+          "Name": "advance",
+          "State": 1,
+          "Timestamp": 126
+        },
+        {
+          "Name": "advance",
+          "State": 0,
+          "Timestamp": 133
+        },
+        {
+          "Name": "advance",
+          "State": 1,
+          "Timestamp": 169
+        },
+        {
+          "Name": "advance",
+          "State": 0,
+          "Timestamp": 175
+        },
+        {
+          "Name": "advance",
+          "State": 1,
+          "Timestamp": 209
+        },
+        {
+          "Name": "advance",
+          "State": 0,
+          "Timestamp": 215
+        },
+        {
+          "Name": "advance",
+          "State": 1,
+          "Timestamp": 251
+        },
+        {
+          "Name": "advance",
+          "State": 0,
+          "Timestamp": 257
+        },
+        {
+          "Name": "advance",
+          "State": 1,
+          "Timestamp": 293
+        },
+        {
+          "Name": "advance",
+          "State": 0,
+          "Timestamp": 300
+        },
+        {
+          "Name": "advance",
+          "State": 1,
+          "Timestamp": 338
+        },
+        {
+          "Name": "advance",
+          "State": 0,
+          "Timestamp": 344
+        },
+        {
+          "Name": "advance",
+          "State": 1,
+          "Timestamp": 384
+        },
+        {
+          "Name": "advance",
+          "State": 0,
+          "Timestamp": 391
+        },
+        {
+          "Name": "advance",
+          "State": 1,
+          "Timestamp": 431
+        },
+        {
+          "Name": "advance",
+          "State": 0,
+          "Timestamp": 437
+        },
+        {
+          "Name": "advance",
+          "State": 1,
+          "Timestamp": 503
+        },
+        {
+          "Name": "advance",
+          "State": 0,
+          "Timestamp": 509
+        },
+        {
+          "Name": "advance/m2n.receiveData",
+          "State": 1,
+          "Timestamp": 82
+        },
+        {
+          "Name": "advance/m2n.receiveData",
+          "State": 0,
+          "Timestamp": 88
+        },
+        {
+          "Name": "advance/m2n.receiveData",
+          "State": 1,
+          "Timestamp": 126
+        },
+        {
+          "Name": "advance/m2n.receiveData",
+          "State": 0,
+          "Timestamp": 133
+        },
+        {
+          "Name": "advance/m2n.receiveData",
+          "State": 1,
+          "Timestamp": 169
+        },
+        {
+          "Name": "advance/m2n.receiveData",
+          "State": 0,
+          "Timestamp": 175
+        },
+        {
+          "Name": "advance/m2n.receiveData",
+          "State": 1,
+          "Timestamp": 210
+        },
+        {
+          "Name": "advance/m2n.receiveData",
+          "State": 0,
+          "Timestamp": 215
+        },
+        {
+          "Name": "advance/m2n.receiveData",
+          "State": 1,
+          "Timestamp": 251
+        },
+        {
+          "Name": "advance/m2n.receiveData",
+          "State": 0,
+          "Timestamp": 257
+        },
+        {
+          "Name": "advance/m2n.receiveData",
+          "State": 1,
+          "Timestamp": 293
+        },
+        {
+          "Name": "advance/m2n.receiveData",
+          "State": 0,
+          "Timestamp": 300
+        },
+        {
+          "Name": "advance/m2n.receiveData",
+          "State": 1,
+          "Timestamp": 338
+        },
+        {
+          "Name": "advance/m2n.receiveData",
+          "State": 0,
+          "Timestamp": 344
+        },
+        {
+          "Name": "advance/m2n.receiveData",
+          "State": 1,
+          "Timestamp": 384
+        },
+        {
+          "Name": "advance/m2n.receiveData",
+          "State": 0,
+          "Timestamp": 391
+        },
+        {
+          "Name": "advance/m2n.receiveData",
+          "State": 1,
+          "Timestamp": 431
+        },
+        {
+          "Name": "advance/m2n.receiveData",
+          "State": 0,
+          "Timestamp": 437
+        },
+        {
+          "Name": "advance/m2n.receiveData",
+          "State": 1,
+          "Timestamp": 503
+        },
+        {
+          "Name": "advance/m2n.receiveData",
+          "State": 0,
+          "Timestamp": 509
+        },
+        {
+          "Name": "advance/m2n.sendData",
+          "State": 1,
+          "Timestamp": 82
+        },
+        {
+          "Name": "advance/m2n.sendData",
+          "State": 0,
+          "Timestamp": 82
+        },
+        {
+          "Name": "advance/m2n.sendData",
+          "State": 1,
+          "Timestamp": 126
+        },
+        {
+          "Name": "advance/m2n.sendData",
+          "State": 0,
+          "Timestamp": 126
+        },
+        {
+          "Name": "advance/m2n.sendData",
+          "State": 1,
+          "Timestamp": 169
+        },
+        {
+          "Name": "advance/m2n.sendData",
+          "State": 0,
+          "Timestamp": 169
+        },
+        {
+          "Name": "advance/m2n.sendData",
+          "State": 1,
+          "Timestamp": 209
+        },
+        {
+          "Name": "advance/m2n.sendData",
+          "State": 0,
+          "Timestamp": 210
+        },
+        {
+          "Name": "advance/m2n.sendData",
+          "State": 1,
+          "Timestamp": 251
+        },
+        {
+          "Name": "advance/m2n.sendData",
+          "State": 0,
+          "Timestamp": 251
+        },
+        {
+          "Name": "advance/m2n.sendData",
+          "State": 1,
+          "Timestamp": 293
+        },
+        {
+          "Name": "advance/m2n.sendData",
+          "State": 0,
+          "Timestamp": 293
+        },
+        {
+          "Name": "advance/m2n.sendData",
+          "State": 1,
+          "Timestamp": 338
+        },
+        {
+          "Name": "advance/m2n.sendData",
+          "State": 0,
+          "Timestamp": 338
+        },
+        {
+          "Name": "advance/m2n.sendData",
+          "State": 1,
+          "Timestamp": 384
+        },
+        {
+          "Name": "advance/m2n.sendData",
+          "State": 0,
+          "Timestamp": 384
+        },
+        {
+          "Name": "advance/m2n.sendData",
+          "State": 1,
+          "Timestamp": 431
+        },
+        {
+          "Name": "advance/m2n.sendData",
+          "State": 0,
+          "Timestamp": 431
+        },
+        {
+          "Name": "advance/m2n.sendData",
+          "State": 1,
+          "Timestamp": 503
+        },
+        {
+          "Name": "advance/m2n.sendData",
+          "State": 0,
+          "Timestamp": 503
+        },
+        {
+          "Name": "advance/map.rbf.computeMapping.FromSolidToFluid-Mesh-Nodes",
+          "State": 1,
+          "Timestamp": 88
+        },
+        {
+          "Name": "advance/map.rbf.computeMapping.FromSolidToFluid-Mesh-Nodes",
+          "State": 0,
+          "Timestamp": 88
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromFluid-Mesh-FacesToSolid",
+          "State": 1,
+          "Timestamp": 82
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromFluid-Mesh-FacesToSolid",
+          "State": 0,
+          "Timestamp": 82
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromFluid-Mesh-FacesToSolid",
+          "State": 1,
+          "Timestamp": 126
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromFluid-Mesh-FacesToSolid",
+          "State": 0,
+          "Timestamp": 126
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromFluid-Mesh-FacesToSolid",
+          "State": 1,
+          "Timestamp": 169
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromFluid-Mesh-FacesToSolid",
+          "State": 0,
+          "Timestamp": 169
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromFluid-Mesh-FacesToSolid",
+          "State": 1,
+          "Timestamp": 209
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromFluid-Mesh-FacesToSolid",
+          "State": 0,
+          "Timestamp": 209
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromFluid-Mesh-FacesToSolid",
+          "State": 1,
+          "Timestamp": 251
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromFluid-Mesh-FacesToSolid",
+          "State": 0,
+          "Timestamp": 251
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromFluid-Mesh-FacesToSolid",
+          "State": 1,
+          "Timestamp": 293
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromFluid-Mesh-FacesToSolid",
+          "State": 0,
+          "Timestamp": 293
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromFluid-Mesh-FacesToSolid",
+          "State": 1,
+          "Timestamp": 338
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromFluid-Mesh-FacesToSolid",
+          "State": 0,
+          "Timestamp": 338
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromFluid-Mesh-FacesToSolid",
+          "State": 1,
+          "Timestamp": 384
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromFluid-Mesh-FacesToSolid",
+          "State": 0,
+          "Timestamp": 384
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromFluid-Mesh-FacesToSolid",
+          "State": 1,
+          "Timestamp": 431
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromFluid-Mesh-FacesToSolid",
+          "State": 0,
+          "Timestamp": 431
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromFluid-Mesh-FacesToSolid",
+          "State": 1,
+          "Timestamp": 503
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromFluid-Mesh-FacesToSolid",
+          "State": 0,
+          "Timestamp": 503
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromSolidToFluid-Mesh-Nodes",
+          "State": 1,
+          "Timestamp": 88
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromSolidToFluid-Mesh-Nodes",
+          "State": 0,
+          "Timestamp": 89
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromSolidToFluid-Mesh-Nodes",
+          "State": 1,
+          "Timestamp": 133
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromSolidToFluid-Mesh-Nodes",
+          "State": 0,
+          "Timestamp": 133
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromSolidToFluid-Mesh-Nodes",
+          "State": 1,
+          "Timestamp": 175
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromSolidToFluid-Mesh-Nodes",
+          "State": 0,
+          "Timestamp": 175
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromSolidToFluid-Mesh-Nodes",
+          "State": 1,
+          "Timestamp": 215
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromSolidToFluid-Mesh-Nodes",
+          "State": 0,
+          "Timestamp": 215
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromSolidToFluid-Mesh-Nodes",
+          "State": 1,
+          "Timestamp": 257
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromSolidToFluid-Mesh-Nodes",
+          "State": 0,
+          "Timestamp": 257
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromSolidToFluid-Mesh-Nodes",
+          "State": 1,
+          "Timestamp": 300
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromSolidToFluid-Mesh-Nodes",
+          "State": 0,
+          "Timestamp": 300
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromSolidToFluid-Mesh-Nodes",
+          "State": 1,
+          "Timestamp": 344
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromSolidToFluid-Mesh-Nodes",
+          "State": 0,
+          "Timestamp": 344
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromSolidToFluid-Mesh-Nodes",
+          "State": 1,
+          "Timestamp": 391
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromSolidToFluid-Mesh-Nodes",
+          "State": 0,
+          "Timestamp": 391
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromSolidToFluid-Mesh-Nodes",
+          "State": 1,
+          "Timestamp": 437
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromSolidToFluid-Mesh-Nodes",
+          "State": 0,
+          "Timestamp": 437
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromSolidToFluid-Mesh-Nodes",
+          "State": 1,
+          "Timestamp": 509
+        },
+        {
+          "Name": "advance/map.rbf.mapData.FromSolidToFluid-Mesh-Nodes",
+          "State": 0,
+          "Timestamp": 509
+        },
+        {
+          "Name": "configure",
+          "State": 1,
+          "Timestamp": 0
+        },
+        {
+          "Name": "configure",
+          "State": 0,
+          "Timestamp": 0
+        },
+        {
+          "Name": "finalize",
+          "State": 1,
+          "Timestamp": 509
+        },
+        {
+          "Name": "finalize",
+          "State": 0,
+          "Timestamp": 511
+        },
+        {
+          "Name": "initialize",
+          "State": 1,
+          "Timestamp": 0
+        },
+        {
+          "Name": "initialize",
+          "State": 0,
+          "Timestamp": 9
+        },
+        {
+          "Name": "initialize/m2n.broadcastVertexDistributions",
+          "State": 1,
+          "Timestamp": 6
+        },
+        {
+          "Name": "initialize/m2n.broadcastVertexDistributions",
+          "State": 0,
+          "Timestamp": 6
+        },
+        {
+          "Name": "initialize/m2n.buildCommunicationMap",
+          "State": 1,
+          "Timestamp": 6
+        },
+        {
+          "Name": "initialize/m2n.buildCommunicationMap",
+          "State": 0,
+          "Timestamp": 6
+        },
+        {
+          "Name": "initialize/m2n.createCommunications",
+          "State": 1,
+          "Timestamp": 6
+        },
+        {
+          "Name": "initialize/m2n.createCommunications",
+          "State": 0,
+          "Timestamp": 9
+        },
+        {
+          "Name": "initialize/m2n.exchangeVertexDistribution",
+          "State": 1,
+          "Timestamp": 3
+        },
+        {
+          "Name": "initialize/m2n.exchangeVertexDistribution",
+          "State": 0,
+          "Timestamp": 6
+        },
+        {
+          "Name": "initialize/m2n.requestMasterConnection",
+          "State": 1,
+          "Timestamp": 0
+        },
+        {
+          "Name": "initialize/m2n.requestMasterConnection",
+          "State": 0,
+          "Timestamp": 2
+        },
+        {
+          "Name": "initialize/m2n.requestSlavesConnection",
+          "State": 1,
+          "Timestamp": 3
+        },
+        {
+          "Name": "initialize/m2n.requestSlavesConnection",
+          "State": 0,
+          "Timestamp": 9
+        },
+        {
+          "Name": "initialize/partition.prepareMesh.Fluid-Mesh-Faces",
+          "State": 1,
+          "Timestamp": 2
+        },
+        {
+          "Name": "initialize/partition.prepareMesh.Fluid-Mesh-Faces",
+          "State": 0,
+          "Timestamp": 2
+        },
+        {
+          "Name": "initialize/partition.prepareMesh.Fluid-Mesh-Nodes",
+          "State": 1,
+          "Timestamp": 2
+        },
+        {
+          "Name": "initialize/partition.prepareMesh.Fluid-Mesh-Nodes",
+          "State": 0,
+          "Timestamp": 2
+        },
+        {
+          "Name": "initialize/partition.receiveGlobalMesh.Solid",
+          "State": 1,
+          "Timestamp": 2
+        },
+        {
+          "Name": "initialize/partition.receiveGlobalMesh.Solid",
+          "State": 0,
+          "Timestamp": 2
+        },
+        {
+          "Name": "initializeData",
+          "State": 1,
+          "Timestamp": 9
+        },
+        {
+          "Name": "initializeData",
+          "State": 0,
+          "Timestamp": 13
+        },
+        {
+          "Name": "initializeData/map.rbf.computeMapping.FromFluid-Mesh-FacesToSolid",
+          "State": 1,
+          "Timestamp": 9
+        },
+        {
+          "Name": "initializeData/map.rbf.computeMapping.FromFluid-Mesh-FacesToSolid",
+          "State": 0,
+          "Timestamp": 12
+        },
+        {
+          "Name": "initializeData/map.rbf.mapData.FromFluid-Mesh-FacesToSolid",
+          "State": 1,
+          "Timestamp": 12
+        },
+        {
+          "Name": "initializeData/map.rbf.mapData.FromFluid-Mesh-FacesToSolid",
+          "State": 0,
+          "Timestamp": 13
+        },
+        {
+          "Name": "solver.advance",
+          "State": 1,
+          "Timestamp": 89
+        },
+        {
+          "Name": "solver.advance",
+          "State": 0,
+          "Timestamp": 126
+        },
+        {
+          "Name": "solver.advance",
+          "State": 1,
+          "Timestamp": 133
+        },
+        {
+          "Name": "solver.advance",
+          "State": 0,
+          "Timestamp": 169
+        },
+        {
+          "Name": "solver.advance",
+          "State": 1,
+          "Timestamp": 175
+        },
+        {
+          "Name": "solver.advance",
+          "State": 0,
+          "Timestamp": 209
+        },
+        {
+          "Name": "solver.advance",
+          "State": 1,
+          "Timestamp": 215
+        },
+        {
+          "Name": "solver.advance",
+          "State": 0,
+          "Timestamp": 251
+        },
+        {
+          "Name": "solver.advance",
+          "State": 1,
+          "Timestamp": 257
+        },
+        {
+          "Name": "solver.advance",
+          "State": 0,
+          "Timestamp": 293
+        },
+        {
+          "Name": "solver.advance",
+          "State": 1,
+          "Timestamp": 300
+        },
+        {
+          "Name": "solver.advance",
+          "State": 0,
+          "Timestamp": 338
+        },
+        {
+          "Name": "solver.advance",
+          "State": 1,
+          "Timestamp": 344
+        },
+        {
+          "Name": "solver.advance",
+          "State": 0,
+          "Timestamp": 384
+        },
+        {
+          "Name": "solver.advance",
+          "State": 1,
+          "Timestamp": 391
+        },
+        {
+          "Name": "solver.advance",
+          "State": 0,
+          "Timestamp": 431
+        },
+        {
+          "Name": "solver.advance",
+          "State": 1,
+          "Timestamp": 437
+        },
+        {
+          "Name": "solver.advance",
+          "State": 0,
+          "Timestamp": 503
+        },
+        {
+          "Name": "solver.advance",
+          "State": 1,
+          "Timestamp": 509
+        },
+        {
+          "Name": "solver.advance",
+          "State": 0,
+          "Timestamp": 509
+        },
+        {
+          "Name": "solver.initialize",
+          "State": 1,
+          "Timestamp": 0
+        },
+        {
+          "Name": "solver.initialize",
+          "State": 2,
+          "Timestamp": 0
+        },
+        {
+          "Name": "solver.initialize",
+          "State": 1,
+          "Timestamp": 9
+        },
+        {
+          "Name": "solver.initialize",
+          "State": 2,
+          "Timestamp": 9
+        },
+        {
+          "Name": "solver.initialize",
+          "State": 1,
+          "Timestamp": 13
+        },
+        {
+          "Name": "solver.initialize",
+          "State": 0,
+          "Timestamp": 82
+        }
+      ],
+      "Timings": {
+        "_GLOBAL": {
+          "Count": 1,
+          "Data": {},
+          "Max": 511,
+          "Min": 511,
+          "TimeRatio": 1.0,
+          "Total": 511
+        },
+        "advance": {
+          "Count": 10,
+          "Data": {},
+          "Max": 7,
+          "Min": 5,
+          "TimeRatio": 0.1232876712328767,
+          "Total": 63
+        },
+        "advance/m2n.receiveData": {
+          "Count": 10,
+          "Data": {},
+          "Max": 7,
+          "Min": 5,
+          "TimeRatio": 0.11741682974559686,
+          "Total": 60
+        },
+        "advance/m2n.sendData": {
+          "Count": 10,
+          "Data": {},
+          "Max": 0,
+          "Min": 0,
+          "TimeRatio": 0.0,
+          "Total": 0
+        },
+        "advance/map.rbf.computeMapping.FromSolidToFluid-Mesh-Nodes": {
+          "Count": 1,
+          "Data": {},
+          "Max": 0,
+          "Min": 0,
+          "TimeRatio": 0.0,
+          "Total": 0
+        },
+        "advance/map.rbf.mapData.FromFluid-Mesh-FacesToSolid": {
+          "Count": 10,
+          "Data": {},
+          "Max": 0,
+          "Min": 0,
+          "TimeRatio": 0.0,
+          "Total": 0
+        },
+        "advance/map.rbf.mapData.FromSolidToFluid-Mesh-Nodes": {
+          "Count": 10,
+          "Data": {},
+          "Max": 0,
+          "Min": 0,
+          "TimeRatio": 0.0,
+          "Total": 0
+        },
+        "configure": {
+          "Count": 1,
+          "Data": {},
+          "Max": 0,
+          "Min": 0,
+          "TimeRatio": 0.0,
+          "Total": 0
+        },
+        "finalize": {
+          "Count": 1,
+          "Data": {},
+          "Max": 1,
+          "Min": 1,
+          "TimeRatio": 0.0019569471624266144,
+          "Total": 1
+        },
+        "initialize": {
+          "Count": 1,
+          "Data": {},
+          "Max": 9,
+          "Min": 9,
+          "TimeRatio": 0.01761252446183953,
+          "Total": 9
+        },
+        "initialize/m2n.broadcastVertexDistributions": {
+          "Count": 1,
+          "Data": {},
+          "Max": 0,
+          "Min": 0,
+          "TimeRatio": 0.0,
+          "Total": 0
+        },
+        "initialize/m2n.buildCommunicationMap": {
+          "Count": 1,
+          "Data": {},
+          "Max": 0,
+          "Min": 0,
+          "TimeRatio": 0.0,
+          "Total": 0
+        },
+        "initialize/m2n.createCommunications": {
+          "Count": 1,
+          "Data": {
+            "Connections": [
+              1
+            ]
+          },
+          "Max": 2,
+          "Min": 2,
+          "TimeRatio": 0.003913894324853229,
+          "Total": 2
+        },
+        "initialize/m2n.exchangeVertexDistribution": {
+          "Count": 1,
+          "Data": {},
+          "Max": 3,
+          "Min": 3,
+          "TimeRatio": 0.005870841487279843,
+          "Total": 3
+        },
+        "initialize/m2n.requestMasterConnection": {
+          "Count": 1,
+          "Data": {},
+          "Max": 1,
+          "Min": 1,
+          "TimeRatio": 0.0019569471624266144,
+          "Total": 1
+        },
+        "initialize/m2n.requestSlavesConnection": {
+          "Count": 1,
+          "Data": {},
+          "Max": 6,
+          "Min": 6,
+          "TimeRatio": 0.011741682974559686,
+          "Total": 6
+        },
+        "initialize/partition.prepareMesh.Fluid-Mesh-Faces": {
+          "Count": 1,
+          "Data": {},
+          "Max": 0,
+          "Min": 0,
+          "TimeRatio": 0.0,
+          "Total": 0
+        },
+        "initialize/partition.prepareMesh.Fluid-Mesh-Nodes": {
+          "Count": 1,
+          "Data": {},
+          "Max": 0,
+          "Min": 0,
+          "TimeRatio": 0.0,
+          "Total": 0
+        },
+        "initialize/partition.receiveGlobalMesh.Solid": {
+          "Count": 1,
+          "Data": {},
+          "Max": 0,
+          "Min": 0,
+          "TimeRatio": 0.0,
+          "Total": 0
+        },
+        "initializeData": {
+          "Count": 1,
+          "Data": {},
+          "Max": 3,
+          "Min": 3,
+          "TimeRatio": 0.005870841487279843,
+          "Total": 3
+        },
+        "initializeData/map.rbf.computeMapping.FromFluid-Mesh-FacesToSolid": {
+          "Count": 1,
+          "Data": {},
+          "Max": 3,
+          "Min": 3,
+          "TimeRatio": 0.005870841487279843,
+          "Total": 3
+        },
+        "initializeData/map.rbf.mapData.FromFluid-Mesh-FacesToSolid": {
+          "Count": 1,
+          "Data": {},
+          "Max": 0,
+          "Min": 0,
+          "TimeRatio": 0.0,
+          "Total": 0
+        },
+        "solver.advance": {
+          "Count": 10,
+          "Data": {},
+          "Max": 65,
+          "Min": 0,
+          "TimeRatio": 0.7103718199608611,
+          "Total": 363
+        },
+        "solver.initialize": {
+          "Count": 1,
+          "Data": {},
+          "Max": 70,
+          "Min": 70,
+          "TimeRatio": 0.136986301369863,
+          "Total": 70
+        }
+      }
+    }
+  ]
+}
